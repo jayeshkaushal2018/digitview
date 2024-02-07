@@ -405,7 +405,7 @@ label {
 		text-decoration: none;
 		display: block;
 		width: 160px;
-		background-color: #F1F1F1;
+		background-color: #909090ce;
 	}
 }
     
@@ -420,6 +420,78 @@ label {
 		text-decoration: none;
 		display: block;
 		width: 160px;
-		background-color: #F1F1F1;
+		background-color: #f1f1f1d3;
 	}
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  border-bottom: 5;
+  border-color: #282c34;
+}
+
+nav ul li {
+  display: inline-block;
+ /* background: rgb(118, 137, 155) !important; */
+ /* background:rgba(124, 151, 177, 0.89) !important; */
+ background: 	#A9A9A9; 
+ border-color: black;
+
+}
+
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* background-color: #cbd6dd; */
+  background-color: rgb(118, 137, 155) !important; 
+  
+}
+
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+
+nav ul li:hover>ul {
+  display: inherit;
+  border-bottom: 0px;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  height: 60px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+
+
+li>a:after {
+  content: '';
+}
+
+li>a:only-child:after {
+  content: '';
 }

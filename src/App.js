@@ -21,7 +21,21 @@ import Event from "./pages/Event";
 import Sidebar from "./components/SideBar/Sidebar";
 import { useNavigate } from "react-router-dom";
 import EventsOrganization from "./components/Events";
-import Dropdown from 'react-multilevel-dropdown';
+import PreEvent from "./pages/PreEvent";
+import Dropdown from "react-multilevel-dropdown";
+import Budget from "./pages/Budget";
+import Ticket from "./pages/Ticket";
+import Workflow from "./pages/Workflow";
+import PurchaseTicket from "./pages/PurchaseTicket";
+import Promotions from "./pages/Promotions";
+import Attandance from "./pages/Attandance";
+import Networking from "./pages/Networking";
+import VideoBroadcasting from "./pages/VideoBroadcasting.JS";
+import VirtualCommunication from "./pages/VirtualCommunication";
+import LiveEventStatus from "./pages/LiveEventStatus";
+// import VideoBroad from "./pages/VideoBroad.JS";
+import VideoCasting from "./pages/VideoCasting";
+
 function App() {
   const storedData = localStorage.getItem("token");
 
@@ -41,7 +55,11 @@ function App() {
       <Navbar expand="lg" className="fixed-top">
         <Container>
           <Navbar.Brand>
-            <Link to="/" className="navbar-brand text-light fw-semibold" style={{"margin-right":"30px"}}>
+            <Link
+              to="/"
+              className="navbar-brand text-light fw-semibold"
+              style={{ "margin-right": "30px" }}
+            >
               {/* <img src={DigiviewLogo} className="img-fluid" alt="" width="30" height="40"/> */}
               DigiView
             </Link>
@@ -50,7 +68,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-end w-100">
               <div className="dropdown">
-                <Nav.Link href="/" className="active text-uppercase text-light" style={{"margin-right":"30px"}}>
+                {/* <Nav.Link href="/" className="active text-uppercase text-light" style={{"margin-right":"30px"}}>
                   <b>Our Service</b>
                 </Nav.Link>
                 <div className="dropdown-content">
@@ -72,7 +90,174 @@ function App() {
                     <a herf="#">Financial Report</a>
                     <a herf="#">Travel Report</a>
                   </div>
-                </div>
+                </div> */}
+                <ul>
+                  <li>
+                    <a href="#" style={{ background: "#3d9efa" }}>
+                      OUR SERVICE
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="#">Pre-Event</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/budget"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                <p>Budget_Allocation</p>
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/ticket"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Ticket_Management
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/workflow"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Event_Workflow
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/Promotion"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Promotions
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/purchase-ticket"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Ticket_Purchase
+                              </Nav.Link>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">During-Event</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/attendance"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                <p>Attendance</p>
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/networking"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Networking_Rooms
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/broadcasting"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Video_Broadcasting
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/virtual-communication"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Virtual_Comm
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/event-status"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Event_Status
+                              </Nav.Link>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Post-Event</a>
+
+                        <ul>
+                          <li>
+                            <a href="#">Attendance</a>
+                          </li>
+                          <li>
+                            <a href="#">Financial Report</a>
+                          </li>
+                          <li>
+                            <a href="#">Travel Report</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  {/* <li>
+              <a href="/about">ABOUT US</a>
+            </li>
+            <li>
+              <a  href="/contact">CONTACT US</a>
+            </li> */}
+                  {/* {storedData ? (
+              <button class="btn btn-primary py-0" pe-5 onClick={logOut}>
+                <b>LOGOUT</b>
+              </button>
+            ) : (
+              <button
+                class="btn btn-primary py-0  pe-5"
+                style={{
+                  background: "#3d9efa",
+                  border: "none",
+                }}
+                onClick={login}
+              >
+                <b>LOGIN</b>
+              </button>
+            )} */}
+                </ul>
               </div>
               {/* <Nav.Link href="/blog" className="text-uppercase">
                 <b>Blog</b>
@@ -80,44 +265,55 @@ function App() {
               {/* <Nav.Link href="/eventOrg" className="text-uppercase">
                 <b>EventS</b>
               </Nav.Link> */}
-              <Nav.Link href="/about" className="text-uppercase text-light " style={{"margin-right":"30px"}}>
+              <Nav.Link
+                href="/about"
+                className="text-uppercase text-light "
+                style={{ "margin-right": "30px" }}
+              >
                 <b>About Us</b>
               </Nav.Link>
-              <Nav.Link href="/contact" className="text-uppercase text-light" style={{"margin-right":"30px"}}>
+              <Nav.Link
+                href="/contact"
+                className="text-uppercase text-light"
+                style={{ "margin-right": "30px" }}
+              >
                 <b>Contact Us</b>
-              </Nav.Link> 
-              <Nav.Link href="/login" className="text-uppercase text-light" style={{"margin-right":"30px"}}>
-              {storedData ? (
-                <button
-                  class="btn btn-primary "
-                  style={{
-                    // "margin-left": 500,
-                    // width: 160,
-                    // "border-radius": 2,
-                    "background":"#3d9efa", 
-                    "border": "none",
-                  }}
-                  
-                  onClick={logOut}
-                >
-                  <b>Logout</b>
-                </button>
-              ) : (
-                <button
-                  class="btn btn-primary "
-                  style={{
-                    // "margin-left": 500,
-                    // width: 160,
-                    // "border-radius": 2,
-                    "background":"#3d9efa", 
-                    "border": "none",
-                  }}
-                  onClick={login}
-                >
-                  <b>Login</b>
-                </button>
-              )}
-              </Nav.Link> 
+              </Nav.Link>
+              <Nav.Link
+                href="/login"
+                className="text-uppercase text-light"
+                style={{ "margin-right": "30px" }}
+              >
+                {storedData ? (
+                  <button
+                    class="btn btn-primary "
+                    style={{
+                      // "margin-left": 500,
+                      // width: 160,
+                      // "border-radius": 2,
+                      background: "#3d9efa",
+                      border: "none",
+                    }}
+                    onClick={logOut}
+                  >
+                    <b>Logout</b>
+                  </button>
+                ) : (
+                  <button
+                    class="btn btn-primary "
+                    style={{
+                      // "margin-left": 500,
+                      // width: 160,
+                      // "border-radius": 2,
+                      background: "#3d9efa",
+                      border: "none",
+                    }}
+                    onClick={login}
+                  >
+                    <b>Login</b>
+                  </button>
+                )}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           {/* <Navbar.Collapse id='basic-navbar-nav'>
@@ -129,7 +325,6 @@ function App() {
             </div>
             </Nav>
           </Navbar.Collapse> */}
-          
         </Container>
       </Navbar>
 
@@ -149,7 +344,20 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/events" element={<Event />} />
         <Route path="/event-organize" element={<EventsOrganization />} />
-    
+        <Route path="/pre-event" element={<PreEvent />} />
+        <Route path="/budget" element={<Budget />} />
+        <Route path="/ticket" element={<Ticket />} />
+        <Route path="/workflow" element={<Workflow />} />
+        <Route path="/Promotion" element={<Promotions />} />
+        <Route path="/purchase-ticket" element={<PurchaseTicket />} />
+        <Route path="/attendance" element={<Attandance />} />
+        <Route path="/networking" element={<Networking />} />
+        <Route path="/broadcasting" element={<VideoCasting />} />
+        <Route
+          path="/virtual-communication"
+          element={<VirtualCommunication />}
+        />
+        <Route path="/event-status" element={<LiveEventStatus />} />
       </Routes>
 
       <footer className="bg-body-tertiary">
