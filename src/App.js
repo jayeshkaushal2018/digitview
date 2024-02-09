@@ -33,8 +33,15 @@ import Networking from "./pages/Networking";
 import VideoBroadcasting from "./pages/VideoBroadcasting.JS";
 import VirtualCommunication from "./pages/VirtualCommunication";
 import LiveEventStatus from "./pages/LiveEventStatus";
-// import VideoBroad from "./pages/VideoBroad.JS";
 import VideoCasting from "./pages/VideoCasting";
+import PostPromotion from "./pages/PostPromotion";
+import EventRecording from "./pages/EventRecording";
+import AudienceData from "./pages/AudienceData";
+import CloneEvent from "./pages/CloneEvent";
+import Feedback from "react-bootstrap/esm/Feedback";
+import Demo from "./pages/demo";
+import RsvpPage from "./pages/RsvpPage";
+import Vendor from "./pages/Vendor";
 
 function App() {
   const storedData = localStorage.getItem("token");
@@ -107,7 +114,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                <p>Budget_Allocation</p>
+                                <p>Budget&nbsp;Allocation</p>
                               </Nav.Link>
                             </a>
                           </li>
@@ -118,18 +125,18 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Ticket_Management
+                                Ticket&nbsp;Purchase
                               </Nav.Link>
                             </a>
                           </li>
                           <li>
                             <a href="#">
                               <Nav.Link
-                                href="/workflow"
+                                href="/rspv"
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Event_Workflow
+                                RSVP&nbsp;Management
                               </Nav.Link>
                             </a>
                           </li>
@@ -147,11 +154,11 @@ function App() {
                           <li>
                             <a href="#">
                               <Nav.Link
-                                href="/purchase-ticket"
+                                href="/vendor"
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Ticket_Purchase
+                                Vendor&nbsp;Management
                               </Nav.Link>
                             </a>
                           </li>
@@ -167,7 +174,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                <p>Attendance</p>
+                                <p>Attendance&nbsp;Management</p>
                               </Nav.Link>
                             </a>
                           </li>
@@ -178,7 +185,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Networking_Rooms
+                                Networking&nbsp;Rooms
                               </Nav.Link>
                             </a>
                           </li>
@@ -189,7 +196,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Video_Broadcasting
+                                Video&nbsp;Broadcasting
                               </Nav.Link>
                             </a>
                           </li>
@@ -200,7 +207,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Virtual_Comm
+                                Virtual&nbsp;Communication&nbsp;Tool
                               </Nav.Link>
                             </a>
                           </li>
@@ -211,7 +218,7 @@ function App() {
                                 className=" text-light "
                                 style={{ "margin-right": "30px" }}
                               >
-                                Event_Status
+                                Live&nbsp;Event&nbsp;Status
                               </Nav.Link>
                             </a>
                           </li>
@@ -222,13 +229,59 @@ function App() {
 
                         <ul>
                           <li>
-                            <a href="#">Attendance</a>
+                            <a href="#">
+                              <Nav.Link
+                                href="/post-promotion"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                <p>Post&nbsp;Event&nbsp;Promotion</p>
+                              </Nav.Link>
+                            </a>
                           </li>
                           <li>
-                            <a href="#">Financial Report</a>
+                            <a href="#">
+                              <Nav.Link
+                                href="/event-recording"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Event&nbsp;Recording
+                              </Nav.Link>
+                            </a>
                           </li>
                           <li>
-                            <a href="#">Travel Report</a>
+                            <a href="#">
+                              <Nav.Link
+                                href="/audience-data"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Audience&nbsp;Data&nbsp;Management
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/clone-event"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Clone&nbsp;Events
+                              </Nav.Link>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <Nav.Link
+                                href="/feedback"
+                                className=" text-light "
+                                style={{ "margin-right": "30px" }}
+                              >
+                                Feedback
+                              </Nav.Link>
+                            </a>
                           </li>
                         </ul>
                       </li>
@@ -314,27 +367,23 @@ function App() {
                   </button>
                 )}
               </Nav.Link>
+              <Nav.Link
+                href="/demo"
+                className="text-uppercase text-light"
+                style={{ "margin-right": "30px" }}
+              >
+                <button style={{ "border-radius": "10px","background-color": "white","border": "none","color": "#3d9efa","padding": "9px 32px","text-align": "center","text-decoration": "none","display": "inline-block" ,"font-size": "16px"}}><h5><b>Get a demo</b></h5></button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          {/* <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='me-auto justify-content-center w-100'>
-            <div className='headerBtns flex'>
-                <button className='btn loginBtn'>
-                    <a href="LoginSignUp">Login/Sign Up</a>
-                </button >
-            </div>
-            </Nav>
-          </Navbar.Collapse> */}
         </Container>
       </Navbar>
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path='/menu' element={<Menu />} /> */}
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path='/LoginSignUp' element={<LoginSignUp/>} /> */}
         <Route path="/list" element={<EventList />} />
         <Route path="/find-events" element={<FilterEvents />} />
         <Route path="/events/:id" element={<EventDetails />} />
@@ -353,11 +402,16 @@ function App() {
         <Route path="/attendance" element={<Attandance />} />
         <Route path="/networking" element={<Networking />} />
         <Route path="/broadcasting" element={<VideoCasting />} />
-        <Route
-          path="/virtual-communication"
-          element={<VirtualCommunication />}
-        />
+        <Route path="/virtual-communication" element={<VirtualCommunication />}/>
         <Route path="/event-status" element={<LiveEventStatus />} />
+        <Route path="/post-promotion" element={<PostPromotion/>} />
+        <Route path="/event-recording" element={<EventRecording/>} />
+        <Route path="/audience-data" element={<AudienceData/>} />
+        <Route path="/clone-event" element={<CloneEvent/>} />
+        <Route path="/feedback" element={<Feedback/>} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/rspv" element={<RsvpPage/>} />
+        <Route path="/vendor" element={<Vendor />} />
       </Routes>
 
       <footer className="bg-body-tertiary">

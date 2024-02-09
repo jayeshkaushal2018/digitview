@@ -428,7 +428,7 @@ nav ul {
   margin: 0;
   list-style: none;
   position: relative;
-  border-bottom: 5;
+  border-bottom: 0;
   border-color: #282c34;
 }
 
@@ -479,8 +479,11 @@ nav ul ul li {
   position: relative;
 }
 
+
 /* Second, Third and more Tiers */
 nav ul ul ul li {
+  width: 240px;
+  height: 60px;
   position: relative;
   top: -60px;
   left: 170px;

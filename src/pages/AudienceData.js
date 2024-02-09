@@ -1,15 +1,13 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import image1 from "../images/video broadcasting/download (2).jpg";
-import image2 from "../images/video broadcasting/images.jpg";
+import image1 from "../images/audience management/download (1).jpg";
+import image2 from "../images/audience management/download.jpeg";
 import image3 from "./about-page-img.jpg";
 import AboutUs from "./sideImage.PNG";
-// import { AiTwotoneDollar } from "react-icons/ai";
-// import { BiSolidPurchaseTag } from "react-icons/bi";
-import { SiPowervirtualagents } from "react-icons/si";
+import { FaBookReader } from "react-icons/fa";
 const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 
-const VideoCasting = () => {
+const AudienceData = () => {
   return (
     <>
       <div style={{ marginLeft: "300px", marginTop: "100px" }}>
@@ -30,22 +28,23 @@ const VideoCasting = () => {
                 style={{ background: "#fff", paddingTop: "7px" }}
               >
                 {" "}
-                <SiPowervirtualagents size={70} color="#3c85c9" />
+                <FaBookReader size={70} color="#3c85c9" />
               </div>
               <div className="col-lg-10">
                 <h2
                   className="fs-1 mb-5 text-uppercase fw-bold"
                   style={{ color: "#3c85c9", paddingTop: "15px" }}
                 >
-                  Video Broadcasting
+                  Audience Database Management
                 </h2>
               </div>
             </div>
             <h4 style={{ paddingLeft: "100px", color: "#808080" }}>
-              Video Broadcasting enables event organizers to broadcast live
-              video content and virtual events to a global audience, expanding
-              event reach and engagement. DigiView offers comprehensive video
-              broadcasting capabilities
+              Audience database management collecting,
+              organizing, and maintaining data related to an organization's
+              audience or customer base. This data typically includes
+              information such as demographics, contact details, preferences,
+              behavior patterns, and interactions with the organization
             </h4>
           </div>
           <div className="col-lg-5 d-flex justify-content-center d-none d-lg-flex">
@@ -62,4 +61,4 @@ const VideoCasting = () => {
   );
 };
 
-export default VideoCasting;
+export default AudienceData;

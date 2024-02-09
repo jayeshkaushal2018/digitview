@@ -1,7 +1,7 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import image1 from "./about-chef1.jpg";
-import image2 from "./about-chef2.jpg";
+import image1 from "../images/virtual communication/download.jpg";
+import image2 from "../images/virtual communication/images.jpg";
 import image3 from "./about-page-img.jpg";
 import AboutUs from "./sideImage.PNG";
 // import { AiTwotoneDollar } from "react-icons/ai";
