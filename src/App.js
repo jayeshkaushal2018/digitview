@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-// import LoginSignUp from './components/LoginSignup/LoginSignup';
 import Signup from "./components/LoginSignup/Signup";
 import DigiviewLogo from "../src/pages/digiviewLogo.webp";
 import EventDetails from "./pages/EventDetails/EventDetails";
@@ -42,6 +41,7 @@ import Feedback from "react-bootstrap/esm/Feedback";
 import Demo from "./pages/demo";
 import RsvpPage from "./pages/RsvpPage";
 import Vendor from "./pages/Vendor";
+import NewAboutUs from "./pages/NewAboutUs";
 
 function App() {
   const storedData = localStorage.getItem("token");
@@ -412,6 +412,7 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/rspv" element={<RsvpPage/>} />
         <Route path="/vendor" element={<Vendor />} />
+        <Route path="/newuser" element={<NewAboutUs/>} />
       </Routes>
 
       <footer className="bg-body-tertiary">
