@@ -346,10 +346,12 @@ function App() {
                       // "border-radius": 2,
                       background: "#3d9efa",
                       border: "none",
+                      fontSize: "18px",
+                      paddingTop:'2px'
                     }}
                     onClick={logOut}
                   >
-                    <b>Logout</b>
+                    Logout
                   </button>
                 ) : (
                   <button
@@ -360,10 +362,12 @@ function App() {
                       // "border-radius": 2,
                       background: "#3d9efa",
                       border: "none",
+                      fontSize: "18px",
+                      paddingTop:'2px'
                     }}
                     onClick={login}
                   >
-                    <b>Login</b>
+                   <b>Login</b> 
                   </button>
                 )}
               </Nav.Link>
