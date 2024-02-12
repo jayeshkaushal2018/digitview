@@ -7,11 +7,21 @@ import AboutUs from "./sideImage.PNG";
 // import { AiTwotoneDollar } from "react-icons/ai";
 // import { BiSolidPurchaseTag } from "react-icons/bi";
 import { MdLiveTv } from "react-icons/md";
+import { FaAngleRight } from "react-icons/fa6";
 const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 
 const LiveEventStatus = () => {
   return (
     <>
+      <div style={{ marginTop: "90px" }}>
+        <div className='container my-5'>
+          <div className='row'>
+            <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>
+              <p style={{ fontWeight: "bold", }}>Our Service <FaAngleRight /> During Event <FaAngleRight /></p><p style={{ "color": "#0778e2", "fontWeight": "bold" }}>LIVE EVENT STATUS</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div style={{ marginLeft: "300px", marginTop: "100px" }}>
         <SimpleImageSlider
           width={896}

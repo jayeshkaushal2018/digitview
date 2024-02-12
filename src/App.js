@@ -37,11 +37,11 @@ import PostPromotion from "./pages/PostPromotion";
 import EventRecording from "./pages/EventRecording";
 import AudienceData from "./pages/AudienceData";
 import CloneEvent from "./pages/CloneEvent";
-import Feedback from "react-bootstrap/esm/Feedback";
 import Demo from "./pages/demo";
 import RsvpPage from "./pages/RsvpPage";
 import Vendor from "./pages/Vendor";
 import NewAboutUs from "./pages/NewAboutUs";
+import Feedback from "./pages/Feedback";
 
 function App() {
   const storedData = localStorage.getItem("token");
@@ -100,7 +100,7 @@ function App() {
                 </div> */}
                 <ul>
                   <li>
-                    <a href="#" style={{ background: "#3d9efa" }}>
+                    <a href="#" style={{ background: "#3d9efa",color:"#fff" }}>
                       OUR SERVICE
                     </a>
                     <ul>
@@ -111,8 +111,8 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/budget"
-                                className=" text-light "
-                                style={{ "margin-right": "30px" }}
+                                className="text-dark"
+                                style={{ "margin-right": "30px" ,}}
                               >
                                 <p>Budget&nbsp;Allocation</p>
                               </Nav.Link>
@@ -122,7 +122,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/ticket"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Ticket&nbsp;Purchase
@@ -133,7 +133,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/rspv"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 RSVP&nbsp;Management
@@ -144,7 +144,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/Promotion"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Promotions
@@ -155,7 +155,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/vendor"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Vendor&nbsp;Management
@@ -171,7 +171,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/attendance"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 <p>Attendance&nbsp;Management</p>
@@ -182,7 +182,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/networking"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Networking&nbsp;Rooms
@@ -193,7 +193,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/broadcasting"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Video&nbsp;Broadcasting
@@ -204,7 +204,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/virtual-communication"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Virtual&nbsp;Communication&nbsp;Tool
@@ -215,7 +215,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/event-status"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Live&nbsp;Event&nbsp;Status
@@ -232,7 +232,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/post-promotion"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 <p>Post&nbsp;Event&nbsp;Promotion</p>
@@ -243,7 +243,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/event-recording"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Event&nbsp;Recording
@@ -254,7 +254,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/audience-data"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Audience&nbsp;Data&nbsp;Management
@@ -265,7 +265,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/clone-event"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Clone&nbsp;Events
@@ -276,7 +276,7 @@ function App() {
                             <a href="#">
                               <Nav.Link
                                 href="/feedback"
-                                className=" text-light "
+                                className="text-dark"
                                 style={{ "margin-right": "30px" }}
                               >
                                 Feedback
@@ -386,7 +386,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/list" element={<EventList />} />
         <Route path="/find-events" element={<FilterEvents />} />
@@ -416,7 +416,7 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/rspv" element={<RsvpPage/>} />
         <Route path="/vendor" element={<Vendor />} />
-        <Route path="/newuser" element={<NewAboutUs/>} />
+        <Route path="/about" element={<NewAboutUs/>} />
       </Routes>
 
       <footer className="bg-body-tertiary">

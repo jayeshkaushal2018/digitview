@@ -5,12 +5,22 @@ import image2 from "../images/vendor management/download.jpg";
 import image3 from "./about-page-img.jpg";
 import AboutUs from "./sideImage.PNG";
 import { AiTwotoneDollar } from "react-icons/ai";
+import { FaAngleRight } from "react-icons/fa6";
 import { FaBookReader } from "react-icons/fa";
 const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 
 const Vendor = () => {
   return (
     <>
+      <div style={{ marginTop: "90px" }}>
+        <div className='container my-5'>
+          <div className='row'>
+            <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>
+              <p style={{ fontWeight: "bold", }}>Our Service <FaAngleRight /> Pre Event <FaAngleRight /></p><p style={{ "color": "#0778e2", "fontWeight": "bold" }}>VENDOR MANAGEMENT</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div style={{ marginLeft: "300px", marginTop: "100px" }}>
         <SimpleImageSlider
           width={896}

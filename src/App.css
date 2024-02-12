@@ -436,7 +436,7 @@ nav ul li {
   display: inline-block;
  /* background: rgb(118, 137, 155) !important; */
  /* background:rgba(124, 151, 177, 0.89) !important; */
- background: 	#A9A9A9; 
+ background: 	#f1f5f9; 
  border-color: black;
 
 }
@@ -445,7 +445,9 @@ nav ul li {
 nav a {
   display: block;
   padding: 0 10px;
-  color: #FFF;
+  /* color: #FFF;
+   */
+   color:  black;
   font-size: 20px;
   line-height: 60px;
   text-decoration: none;
@@ -453,7 +455,8 @@ nav a {
 
 nav a:hover {
   /* background-color: #cbd6dd; */
-  background-color: rgb(118, 137, 155) !important; 
+  /* background-color: rgb(118, 137, 155) !important;  */
+  background-color: #0778e2;
   
 }
 
@@ -462,6 +465,7 @@ nav ul ul {
   display: none;
   position: absolute;
   top: 60px;
+  
 }
 
 
@@ -483,9 +487,9 @@ nav ul ul li {
 /* Second, Third and more Tiers */
 nav ul ul ul li {
   width: 240px;
-  height: 60px;
+  height: 70px;
   position: relative;
-  top: -60px;
+  top: -40px;
   left: 170px;
 }
 

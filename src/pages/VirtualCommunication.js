@@ -4,6 +4,7 @@ import image1 from "../images/virtual communication/download.jpg";
 import image2 from "../images/virtual communication/images.jpg";
 import image3 from "./about-page-img.jpg";
 import AboutUs from "./sideImage.PNG";
+import { FaAngleRight } from "react-icons/fa6"
 // import { AiTwotoneDollar } from "react-icons/ai";
 // import { BiSolidPurchaseTag } from "react-icons/bi";
 import { SiPowervirtualagents } from "react-icons/si";
@@ -12,6 +13,15 @@ const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 const VirtualCommunication = () => {
   return (
     <>
+      <div style={{ marginTop: "90px" }}>
+        <div className='container my-5'>
+          <div className='row'>
+            <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>
+              <p style={{ fontWeight: "bold", }}>Our Service <FaAngleRight /> During Event <FaAngleRight /></p><p style={{ "color": "#0778e2", "fontWeight": "bold" }}>VIRTUAL COMMUNICATION TOOL</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div style={{ marginLeft: "300px", marginTop: "100px" }}>
         <SimpleImageSlider
           width={896}

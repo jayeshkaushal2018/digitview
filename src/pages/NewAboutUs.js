@@ -87,7 +87,7 @@ function NewAboutUs() {
 
             </Container>
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </>
     );
 }

@@ -14,12 +14,12 @@ function Home() {
             <header className='h-100 min-vh-100 d-flex align-items-center text-light shadow'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-sm-7 d-flex d-sm-block flex-column align-items-center' >
+                        <div className='col-sm-5 d-flex d-sm-block flex-column align-items-center' style={{"paddingTop":"50px"}} >
 
-                            <h1 className='mb-5 text-black fw-bold text-center text-sm-start' style={{"marginLeft":"120px"}}> <p className='text-primary' style={{'font-size': '55px'}}>DigiView</p><p style={{"color":'#606060','font-size': '50px' }}>Event<br/> Management <br/>Platform</p></h1>
+                            <h1 className='mb-5 text-black fw-bold text-center text-sm-start' style={{"marginLeft":"120px"}}> <p className='text-primary' style={{'font-size': '70px'}}>DigiView</p><p style={{"color":'#606060','font-size': '65px' }}>Event<br/> Management <br/>Platform</p></h1>
                             {/* <MenuBtn /> */}
                         </div>
-                        <div className='col-sm-5 d-flex d-sm-block flex-column align-items-center'>
+                        <div className='col-sm-7 d-flex d-sm-block flex-column align-items-center' style={{"borderRadius":"8px"}}>
 
                         <img src={HomeImg} className='img-fluid w-55' alt="about img" />
                         </div>
