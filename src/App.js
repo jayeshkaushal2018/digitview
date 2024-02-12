@@ -42,6 +42,7 @@ import RsvpPage from "./pages/RsvpPage";
 import Vendor from "./pages/Vendor";
 import NewAboutUs from "./pages/NewAboutUs";
 import Feedback from "./pages/Feedback";
+import Footer from "./components/Footer/Footers";
 
 function App() {
   const storedData = localStorage.getItem("token");
@@ -419,9 +420,10 @@ function App() {
         <Route path="/about" element={<NewAboutUs/>} />
       </Routes>
 
-      <footer className="bg-body-tertiary">
+      {/* <footer className="bg-body-tertiary"> */}
         {/* <p className="p-3 m-0 text-center">copyright @ made by Ionut Cora</p> */}
-      </footer>
+      {/* </footer> */}
+      <Footer />
     </div>
   );
 }
