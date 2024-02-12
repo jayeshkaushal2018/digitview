@@ -7,7 +7,7 @@ import { BiBorderBottom } from 'react-icons/bi';
 const Footers = () => {
     return (
         <>
-            <div className="container">
+            <div className="container" style={{"backgroundColor":"#f1f5f9"}}>
                 <footer className="py-3 my-4">
                     <ul className="nav justify-content-center pb-3 mb-3">
                         <li className="nav-item">
