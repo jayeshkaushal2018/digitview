@@ -4,7 +4,7 @@ import { FaAngleRight } from "react-icons/fa6";
 function Breadcrumb(props) {
 
     return (<>
-        <div style={{ marginTop: "90px" }}>
+        <div style={{ marginTop: "90px",marginLeft:"-100px" }}>
             <div className='container my-5'>
                 <div className='row'>
                     <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>

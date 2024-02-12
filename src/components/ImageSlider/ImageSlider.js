@@ -3,7 +3,7 @@ import SimpleImageSlider from "react-simple-image-slider";
 function ImageSlider(props) {
 
     return (<>
-        <div style={{ marginLeft: props.marginLeft, marginTop: props.marginTop }}>
+        <div style={{ marginLeft: props.marginLeft, marginTop: props.marginTop ,marginBottom:"100px"}}>
             <SimpleImageSlider
                 width={props.width}
                 height={props.height}

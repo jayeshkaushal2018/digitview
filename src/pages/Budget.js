@@ -16,7 +16,7 @@ const Budget = () => {
   return (
     <>
       <Breadcrumb value1={"Our Service"}  value2={" Pre Event"} value3={"Budget Allocation"}/> 
-      <ImageSlider marginLeft={"400px"}  marginTop= {"200px"} width={896}
+      <ImageSlider marginLeft={"400px"}  marginTop= {"45px"} width={1200}
           height={504}
           images={images}
           showBullets={"true"}
