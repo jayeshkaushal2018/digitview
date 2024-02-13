@@ -4,8 +4,6 @@ import image1 from "./about-chef1.jpg";
 import image2 from "./about-chef2.jpg";
 import image3 from "./about-page-img.jpg";
 import AboutUs from "./sideImage.PNG";
-// import { AiTwotoneDollar } from "react-icons/ai";
-// import { BiSolidPurchaseTag } from "react-icons/bi";
 import { SiPowervirtualagents } from "react-icons/si";
 const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 

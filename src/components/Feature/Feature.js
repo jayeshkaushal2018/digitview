@@ -1,5 +1,5 @@
 
-import { FaAngleRight } from "react-icons/fa6";
+
 
 function Feature(props) {
 

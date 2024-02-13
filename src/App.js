@@ -4,11 +4,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Signup from "./components/LoginSignup/Signup";
-import DigiviewLogo from "../src/pages/digiviewLogo.webp";
 import EventDetails from "./pages/EventDetails/EventDetails";
 import FilterEvents from "./pages/FilterEvents/FilterEvents";
 import Blog from "./pages/Blog";
@@ -17,11 +14,9 @@ import Products from "./pages/Products";
 import Login from "./components/LoginSignup/Login";
 import EventOrg from "./pages/EventOrg/EventOrg";
 import Event from "./pages/Event";
-import Sidebar from "./components/SideBar/Sidebar";
 import { useNavigate } from "react-router-dom";
 import EventsOrganization from "./components/Events";
 import PreEvent from "./pages/PreEvent";
-import Dropdown from "react-multilevel-dropdown";
 import Budget from "./pages/Budget";
 import Ticket from "./pages/Ticket";
 import Workflow from "./pages/Workflow";
@@ -29,7 +24,6 @@ import PurchaseTicket from "./pages/PurchaseTicket";
 import Promotions from "./pages/Promotions";
 import Attandance from "./pages/Attandance";
 import Networking from "./pages/Networking";
-import VideoBroadcasting from "./pages/VideoBroadcasting.JS";
 import VirtualCommunication from "./pages/VirtualCommunication";
 import LiveEventStatus from "./pages/LiveEventStatus";
 import VideoCasting from "./pages/VideoCasting";
@@ -43,7 +37,9 @@ import Vendor from "./pages/Vendor";
 import NewAboutUs from "./pages/NewAboutUs";
 import Feedback from "./pages/Feedback";
 import Footer from "./components/Footer/Footers";
-
+import FeaturePage from "./components/FeaturePage/FeaturePage";
+import PostEvent from "./pages/PostEvent";
+import DuringEvent from "./pages/DuringEvent";
 function App() {
   const storedData = localStorage.getItem("token");
 
@@ -101,19 +97,22 @@ function App() {
                 </div> */}
                 <ul>
                   <li>
-                    <a href="#" style={{ background: "#3d9efa",color:"#fff" }}>
+                    <a href="#" style={{ background: "#3d9efa", color: "#fff" }}>
                       OUR SERVICE
                     </a>
                     <ul>
                       <li>
-                        <a href="#">Pre-Event</a>
+                        <a href="#"><Nav.Link
+                          href="/pre-event"
+                          className="text-dark"
+                        >Pre-Event</Nav.Link></a>
                         <ul>
                           <li>
                             <a href="#">
                               <Nav.Link
                                 href="/budget"
                                 className="text-dark"
-                                style={{ "margin-right": "30px" ,}}
+                                style={{ "margin-right": "30px", }}
                               >
                                 <p>Budget&nbsp;Allocation</p>
                               </Nav.Link>
@@ -166,7 +165,10 @@ function App() {
                         </ul>
                       </li>
                       <li>
-                        <a href="#">During-Event</a>
+                        <a href="#"><Nav.Link
+                          href="/during-event"
+                          className="text-dark"
+                        >During-Event</Nav.Link></a>
                         <ul>
                           <li>
                             <a href="#">
@@ -226,7 +228,10 @@ function App() {
                         </ul>
                       </li>
                       <li>
-                        <a href="#">Post-Event</a>
+                        <a href="#"><Nav.Link
+                          href="/post-event"
+                          className="text-dark"
+                        >Post-Event</Nav.Link></a>
 
                         <ul>
                           <li>
@@ -348,7 +353,7 @@ function App() {
                       background: "#3d9efa",
                       border: "none",
                       fontSize: "18px",
-                      paddingTop:'2px'
+                      paddingTop: '2px'
                     }}
                     onClick={logOut}
                   >
@@ -364,11 +369,11 @@ function App() {
                       background: "#3d9efa",
                       border: "none",
                       fontSize: "18px",
-                      paddingTop:'2px'
+                      paddingTop: '2px'
                     }}
                     onClick={login}
                   >
-                   <b>Login</b> 
+                    <b>Login</b>
                   </button>
                 )}
               </Nav.Link>
@@ -377,7 +382,7 @@ function App() {
                 className="text-uppercase text-light"
                 style={{ "margin-right": "30px" }}
               >
-                <button style={{ "border-radius": "10px","background-color": "white","border": "none","color": "#3d9efa","padding": "9px 32px","text-align": "center","text-decoration": "none","display": "inline-block" ,"font-size": "16px"}}><h5><b>Get a demo</b></h5></button>
+                <button style={{ "border-radius": "10px", "background-color": "white", "border": "none", "color": "#3d9efa", "padding": "9px 32px", "text-align": "center", "text-decoration": "none", "display": "inline-block", "font-size": "16px" }}><h5><b>Get a demo</b></h5></button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -387,7 +392,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/list" element={<EventList />} />
         <Route path="/find-events" element={<FilterEvents />} />
@@ -407,21 +411,24 @@ function App() {
         <Route path="/attendance" element={<Attandance />} />
         <Route path="/networking" element={<Networking />} />
         <Route path="/broadcasting" element={<VideoCasting />} />
-        <Route path="/virtual-communication" element={<VirtualCommunication />}/>
+        <Route path="/virtual-communication" element={<VirtualCommunication />} />
         <Route path="/event-status" element={<LiveEventStatus />} />
-        <Route path="/post-promotion" element={<PostPromotion/>} />
-        <Route path="/event-recording" element={<EventRecording/>} />
-        <Route path="/audience-data" element={<AudienceData/>} />
-        <Route path="/clone-event" element={<CloneEvent/>} />
-        <Route path="/feedback" element={<Feedback/>} />
+        <Route path="/post-promotion" element={<PostPromotion />} />
+        <Route path="/event-recording" element={<EventRecording />} />
+        <Route path="/audience-data" element={<AudienceData />} />
+        <Route path="/clone-event" element={<CloneEvent />} />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="/demo" element={<Demo />} />
-        <Route path="/rspv" element={<RsvpPage/>} />
+        <Route path="/rspv" element={<RsvpPage />} />
         <Route path="/vendor" element={<Vendor />} />
-        <Route path="/about" element={<NewAboutUs/>} />
+        <Route path="/about" element={<NewAboutUs />} />
+        <Route path="/feature" element={<FeaturePage />} />
+        <Route path="/post-event" element={<PostEvent />} />
+        <Route path="/during-event" element={<DuringEvent />} />
       </Routes>
 
       {/* <footer className="bg-body-tertiary"> */}
-        {/* <p className="p-3 m-0 text-center">copyright @ made by Ionut Cora</p> */}
+      {/* <p className="p-3 m-0 text-center">copyright @ made by Ionut Cora</p> */}
       {/* </footer> */}
       <Footer />
     </div>
