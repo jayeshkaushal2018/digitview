@@ -17,7 +17,6 @@ import EventsOrganization from "./components/Events";
 import PreEvent from "./pages/PreEvent";
 import Budget from "./pages/Budget";
 import Ticket from "./pages/Ticket";
-import Workflow from "./pages/Workflow";
 import PurchaseTicket from "./pages/PurchaseTicket";
 import Promotions from "./pages/Promotions";
 import Attandance from "./pages/Attandance";
@@ -60,7 +59,6 @@ function App() {
         <Route path="/pre-event" element={<PreEvent />} />
         <Route path="/budget" element={<Budget />} />
         <Route path="/ticket" element={<Ticket />} />
-        <Route path="/workflow" element={<Workflow />} />
         <Route path="/Promotion" element={<Promotions />} />
         <Route path="/purchase-ticket" element={<PurchaseTicket />} />
         <Route path="/attendance" element={<Attandance />} />

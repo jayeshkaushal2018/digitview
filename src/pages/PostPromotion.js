@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../images/post event promotions/Screenshot-2023-08-16-at-3.02.41-PM.png";
 import image2 from "../images/post event promotions/images.jpg";
-import image3 from "./about-page-img.jpg";
+import image3 from "./../assets/about-page-img.jpgg";
 import AboutUs from "./sideImage.PNG";
 import { FaBookReader } from "react-icons/fa";
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';

@@ -1,7 +1,7 @@
 import React from "react";
 import image1 from "../images/event status/airfocus-f2C59x5uvn8-unsplash.jpg";
 import image2 from "../images/event status/jazmin-quaynor-18mUXUS8ksI-unsplash.jpg";
-import image3 from "./about-page-img.jpg";
+import image3 from "./../assets/about-page-img.jpgg";
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import Feature from '../components/Feature/Feature';
