@@ -91,19 +91,18 @@ import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsCalendar2DateFill } from "react-icons/bs";
-import DatePicker from "react-datepicker";
 import { BiDetail } from "react-icons/bi";
 
 const EventsOrganization = () => {
   // State to store list of items
   const [items, setItems] = useState([]);
   // State to store input values
-  
+
   const [inputValues, setInputValues] = useState({
     name: "",
     quantity: "",
     price: "",
-    datedetail:"",
+    datedetail: "",
   });
   // State to store the id of the item being edited
   const [editItemId, setEditItemId] = useState(null);
@@ -117,7 +116,7 @@ const EventsOrganization = () => {
   // Function to handle adding or updating an item
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, quantity, price ,datedetail } = inputValues;
+    const { name, quantity, price, datedetail } = inputValues;
     if (name.trim() !== "" && quantity.trim() !== "" && price.trim() !== "") {
       if (editItemId !== null) {
         // Update existing item
@@ -150,7 +149,7 @@ const EventsOrganization = () => {
         name: "",
         quantity: "",
         price: "",
-        datedetail:"",
+        datedetail: "",
       });
     }
   };
@@ -185,7 +184,9 @@ const EventsOrganization = () => {
         <div className="shadow-sm p-4  mt-5 ms-3">
           <form onSubmit={handleSubmit} className="d-flex">
             <div class="form-group mx-4">
-              <label><h4>Event Title</h4></label>
+              <label>
+                <h4>Event Title</h4>
+              </label>
               <input
                 class="form-control"
                 type="text"
@@ -196,7 +197,9 @@ const EventsOrganization = () => {
               />
             </div>
             <div class="form-group mx-4">
-              <label><h4>Details</h4></label>
+              <label>
+                <h4>Details</h4>
+              </label>
               <input
                 class="form-control"
                 type="text"
@@ -207,7 +210,9 @@ const EventsOrganization = () => {
               />
             </div>
             <div class="form-group mx-4">
-              <label><h4>Location</h4></label>
+              <label>
+                <h4>Location</h4>
+              </label>
               <input
                 type="text"
                 name="price"
@@ -218,7 +223,9 @@ const EventsOrganization = () => {
               />
             </div>
             <div class="form-group mx-4">
-              <label><h4>date</h4></label>
+              <label>
+                <h4>date</h4>
+              </label>
               <input
                 type="text"
                 name="datedetail"
@@ -266,21 +273,51 @@ const EventsOrganization = () => {
             />
             <div class="card-body w-100">
               <p class="card-text">
-                <h3><span><b>{item.name}</b></span></h3>
-                <div><span><b>{item.quantity}</b></span></div>
-                <div><span><b><FaLocationDot/> &nbsp;  &nbsp; {item.price}</b></span></div>
-                <div><span><b><BsCalendar2DateFill /> &nbsp;  &nbsp; {item.datedetail}</b></span></div>
+                <h3>
+                  <span>
+                    <b>{item.name}</b>
+                  </span>
+                </h3>
+                <div>
+                  <span>
+                    <b>{item.quantity}</b>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <b>
+                      <FaLocationDot /> &nbsp; &nbsp; {item.price}
+                    </b>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <b>
+                      <BsCalendar2DateFill /> &nbsp; &nbsp; {item.datedetail}
+                    </b>
+                  </span>
+                </div>
               </p>
               <span>
-              <button
-                class="btn btn-primary mt-4"
-                onClick={() => editItem(item.id)}
-              >
-              <b>  Edit <MdEdit/></b>
-              </button>
-              <button class="btn btn-primary mt-4" onClick={() => deleteItem(item.id)} style={{"marginLeft":"20px"}}>
-              <b>  Delete <MdDelete/></b>
-              </button>
+                <button
+                  class="btn btn-primary mt-4"
+                  onClick={() => editItem(item.id)}
+                >
+                  <b>
+                    {" "}
+                    Edit <MdEdit />
+                  </b>
+                </button>
+                <button
+                  class="btn btn-primary mt-4"
+                  onClick={() => deleteItem(item.id)}
+                  style={{ marginLeft: "20px" }}
+                >
+                  <b>
+                    {" "}
+                    Delete <MdDelete />
+                  </b>
+                </button>
               </span>
             </div>
           </div>

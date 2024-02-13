@@ -5,7 +5,6 @@ import email_icon from "../../pages/email.png";
 import password_icon from "../../pages/password.png";
 import { useState } from "react";
 import axios from "axios";
-import { jwtDecode } from "jwt-decode";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const LoginSignUp = () => {
