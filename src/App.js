@@ -17,7 +17,6 @@ import EventsOrganization from "./components/Events";
 import PreEvent from "./pages/PreEvent";
 import Budget from "./pages/Budget";
 import Ticket from "./pages/Ticket";
-import Workflow from "./pages/Workflow";
 import PurchaseTicket from "./pages/PurchaseTicket";
 import Promotions from "./pages/Promotions";
 import Attandance from "./pages/Attandance";
@@ -35,6 +34,9 @@ import Vendor from "./pages/Vendor";
 import NewAboutUs from "./pages/NewAboutUs";
 import Feedback from "./pages/Feedback";
 import Footer from "./components/Footer/Footers";
+import FeaturePage from "./components/FeaturePage/FeaturePage";
+import PostEvent from "./pages/PostEvent";
+import DuringEvent from "./pages/DuringEvent";
 import NavbarMenu from "./components/Navbar";
 
 function App() {
@@ -44,7 +46,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/list" element={<EventList />} />
         <Route path="/find-events" element={<FilterEvents />} />
@@ -58,16 +59,12 @@ function App() {
         <Route path="/pre-event" element={<PreEvent />} />
         <Route path="/budget" element={<Budget />} />
         <Route path="/ticket" element={<Ticket />} />
-        <Route path="/workflow" element={<Workflow />} />
         <Route path="/Promotion" element={<Promotions />} />
         <Route path="/purchase-ticket" element={<PurchaseTicket />} />
         <Route path="/attendance" element={<Attandance />} />
         <Route path="/networking" element={<Networking />} />
         <Route path="/broadcasting" element={<VideoCasting />} />
-        <Route
-          path="/virtual-communication"
-          element={<VirtualCommunication />}
-        />
+        <Route path="/virtual-communication" element={<VirtualCommunication />}/>
         <Route path="/event-status" element={<LiveEventStatus />} />
         <Route path="/post-promotion" element={<PostPromotion />} />
         <Route path="/event-recording" element={<EventRecording />} />
@@ -78,6 +75,9 @@ function App() {
         <Route path="/rspv" element={<RsvpPage />} />
         <Route path="/vendor" element={<Vendor />} />
         <Route path="/about" element={<NewAboutUs />} />
+        <Route path="/feature" element={<FeaturePage />} />
+        <Route path="/post-event" element={<PostEvent />} />
+        <Route path="/during-event" element={<DuringEvent />} />
       </Routes>
 
       {/* <footer className="bg-body-tertiary"> */}

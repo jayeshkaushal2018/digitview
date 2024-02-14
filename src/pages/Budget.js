@@ -1,8 +1,7 @@
 import React from 'react';
-import SimpleImageSlider from "react-simple-image-slider";
 import image1 from "../images/budget allocation/first.svg";
 import image2 from "../images/budget allocation/second.jpg";
-import image3 from "./about-page-img.jpg";
+import image3 from "./../assets/about-page-img.jpgg";
 import AboutUs from "./sideImage.PNG";
 import { AiTwotoneDollar } from "react-icons/ai";
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
@@ -15,7 +14,7 @@ const Budget = () => {
   let content = "Event organizers have the capability to effectively manage the  budget for their events within the platform. This feature provides organizers with the necessary tools to allocate funds, track expenses, and ensure financial transparency throughout the event planning process."
   return (
     <>
-      <Breadcrumb value1={"Our Service"}  value2={" Pre Event"} value3={"Budget Allocation"}/> 
+      <Breadcrumb value1={"Our Service"}  value2={" Pre Event"} value3={"Budget Allocation"} value4={"/pre-event"}/> 
       <ImageSlider marginLeft={"400px"}  marginTop= {"45px"} width={1200}
           height={504}
           images={images}

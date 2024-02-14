@@ -1,73 +1,30 @@
 import React from "react";
-import SimpleImageSlider from "react-simple-image-slider";
 import image1 from "../images/event status/airfocus-f2C59x5uvn8-unsplash.jpg";
 import image2 from "../images/event status/jazmin-quaynor-18mUXUS8ksI-unsplash.jpg";
-import image3 from "./about-page-img.jpg";
+import image3 from "./../assets/about-page-img.jpgg";
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import ImageSlider from '../components/ImageSlider/ImageSlider';
+import Feature from '../components/Feature/Feature';
 import AboutUs from "./sideImage.PNG";
-// import { AiTwotoneDollar } from "react-icons/ai";
-// import { BiSolidPurchaseTag } from "react-icons/bi";
 import { MdLiveTv } from "react-icons/md";
-import { FaAngleRight } from "react-icons/fa6";
 const images = [{ url: image1 }, { url: image2 }, { url: image3 }];
 
 const LiveEventStatus = () => {
+  
+  let title = "Active/ Live Event Status"
+  let content = " The Active/Live Event Status Monitoring feature empowers event managers to stay informed about the real-time status and performance of their events, ensuring smooth operations and timely interventions"
   return (
     <>
-      <div style={{ marginTop: "90px" }}>
-        <div className='container my-5'>
-          <div className='row'>
-            <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>
-              <p style={{ fontWeight: "bold", }}>Our Service <FaAngleRight /> During Event <FaAngleRight /></p><p style={{ "color": "#0778e2", "fontWeight": "bold" }}>LIVE EVENT STATUS</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style={{ marginLeft: "300px", marginTop: "100px" }}>
-        <SimpleImageSlider
-          width={896}
+      <Breadcrumb value1={"Our Service"}  value2={"During Event"} value3={"LIVE EVENT STATUS"} value4={"/during-event"}/>
+      <ImageSlider marginLeft={"400px"}  marginTop= {"45px"} width={1200}
           height={504}
           images={images}
-          showBullets={true}
-          showNavs={true}
-        />
-      </div>
-      <div className="container my-5">
-        <div className="row">
-          <div className="col-lg-7 d-flex flex-column align-items-center justify-content-center">
-            <div className="row">
-              <div
-                className="col-lg-2"
-                style={{ background: "#fff", paddingTop: "7px" }}
-              >
-                {" "}
-                <MdLiveTv size={70} color="#3c85c9" />
-              </div>
-              <div className="col-lg-10">
-                <h2
-                  className="fs-1 mb-5 text-uppercase fw-bold"
-                  style={{ color: "#3c85c9", paddingTop: "15px" }}
-                >
-                  Active/ Live Event Status
-                </h2>
-              </div>
-            </div>
-            <h4 style={{ paddingLeft: "100px", color: "#808080" }}>
-              The Active/Live Event Status Monitoring feature empowers event
-              managers to stay informed about the real-time status and
-              performance of their events, ensuring smooth operations and timely
-              interventions
-            </h4>
-          </div>
-          <div className="col-lg-5 d-flex justify-content-center d-none d-lg-flex">
-            <img
-              src={AboutUs}
-              className="img-fluid w-55"
-              alt="about img"
-              style={{ "border-color": "white" }}
-            />
-          </div>
-        </div>
-      </div>
+          showBullets={"true"}
+          showNavs={"true"}
+          autoPlay={"true"}
+          autoPlayDelay={3.0}/>
+      <Feature title={title} content={content} icone={< MdLiveTv size={70} color='#3c85c9' />} image={AboutUs}/>
+
     </>
   );
 };
