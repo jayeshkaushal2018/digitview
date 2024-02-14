@@ -8,6 +8,7 @@ import { BsCameraReelsFill } from "react-icons/bs";
 import { FaDatabase } from "react-icons/fa6";
 import { FaClone } from "react-icons/fa";
 import { MdFeedback } from "react-icons/md";
+import EventFeatureIcon from '../components/EventFeatureIcon';
 const images = [{ url: image1 }, { url: image2 }];
 function PostEvent() {
     return (
@@ -31,66 +32,16 @@ function PostEvent() {
                         </div>
                     </div>
                     <div className="row" style={{"marginLeft":"20%","marginRight":"20%","borderRadius":"15px","paddingLeft":"10%","paddingTop":"5%","paddingBottom":"5%","marginTop":"40px","backgroundColor":"#dfe6ea" }}>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <FaBookReader size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Post Event<br/>Promotion</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <BsCameraReelsFill size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Event<br/>Recording</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <FaDatabase size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Audience Database<br/>Management</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px" ,"padding":"25px"}}>
-                                    <FaClone size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "35px","textAlign":"center" }}>Clone Events</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <MdFeedback size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Feedback</h4>
-                                </div>
-                            </div>
-                        </div>
+                    
+                        <EventFeatureIcon content={"Post Event Promotion"} icon={<FaBookReader size={"5rem"}/>} />
+                    
+                        <EventFeatureIcon content={"Event Recording"} icon={<BsCameraReelsFill size={"5rem"}/>} />
+                        
+                        <EventFeatureIcon content={"Audience Database "} icon={<FaDatabase size={"5rem"}/>} />
+                    
+                        <EventFeatureIcon content={"Clone Events management"} icon={<FaClone size={"5rem"}/>} />
+                     
+                        <EventFeatureIcon content={"Feedback status"} icon={<MdFeedback size={"5rem"}/>} />
                     </div>
             </div>
         </>
