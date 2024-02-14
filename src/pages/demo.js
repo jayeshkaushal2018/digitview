@@ -12,52 +12,46 @@ function demo() {
           <h1 className='text-light'>Demo</h1>
         </div>
       </header>
-
-      <div className='container my-5' >
-        <div className='row'>
-          <div className='col-lg-7 d-flex justify-content-center'>
+      <div className='container my-5 d-flex justify-content-center' style={{"paddingTop":"20px","paddingBottom":"20px"}} >
+     
+        <div className='row' style={{"backgroundColor":"#e7f0f8","paddingTop":"50px","paddingBottom":"50px","width":"50%","borderRadius":"20px"}}>
+        
+        <div className='col-lg-12 d-flex justify-content-center'>
+        <h1 style={{"fontSize":"5rem" }}>Get a demo</h1>
+         </div>
+         <div className='col-lg-12 d-flex justify-content-center'>
+        <h1 style={{"fontSize":"1rem" ,"paddingTop":"5px","paddingBottom":"30px","marginLeft":"15%","marginRight":"10%"}}>Fill in the form and our team will get in touch with you shortly  to discuss your needs and arrange a personalized demo.</h1>
+         </div>
+          <div className='col-lg-12 d-flex justify-content-center'>
             <Form>
-              <Form.Group className='row mb-3'>
-                <label for="fname" className='fname'>GET A DEMO <br />Make a booking now</label>
-                <div className='col-md-6'>
-                  <Form.Label htmlFor='first-name'>First Name</Form.Label>
-                  <Form.Control type='text' id='first-name' />
-                </div>
-                <div className='col-md-6'>
-                  <Form.Label htmlFor='last-name'>Last Name</Form.Label>
-                  <Form.Control type='text' id='last-name' />
-                </div>
-              </Form.Group>
-              <Form.Group className='row mb-3'>
-                <div className='col-md-6'>
-                  <Form.Label htmlFor='email-address'>Email Address</Form.Label>
-                  <Form.Control type='email' id='email-address' />
-                </div>
-                <div className='col-md-6'>
-                  <Form.Label htmlFor='phone-number'>Phone Number</Form.Label>
-                  <Form.Control type='tel' id='phone-number' />
-                </div>
+              <Form.Group className='mb-4'>
+                <Form.Label htmlFor='first-name'><b>First Name</b></Form.Label>
+                <Form.Control type='text' id='first-name' />
               </Form.Group>
               <Form.Group className='mb-4'>
-                <Form.Label htmlFor='message'>Your Message</Form.Label>
-                <Form.Control type='textarea' id='message' />
+                <Form.Label htmlFor='last-name'><b>Last Name</b></Form.Label>
+                <Form.Control type='text' id='last-name' />
               </Form.Group>
-              <div style={{"textAlign":"center"}}>
-              <button type='submit' className='btn btn-primary reg-btn btn-lg'>Register now</button>
+              <Form.Group className='mb-4'>
+                <Form.Label htmlFor='email-address'><b>Email Address</b></Form.Label>
+                <Form.Control type='email' id='email-address' />
+              </Form.Group>
+              <Form.Group className='mb-4'>
+                <Form.Label htmlFor='phone-number'><b>Phone Number</b></Form.Label>
+                <Form.Control type='tel' id='phone-number' />
+              </Form.Group>
+              <Form.Group className='mb-4'>
+                <Form.Label htmlFor='message'><b>Your Message</b></Form.Label>
+                <textarea className="form-control" id="message" rows="5" />
+              </Form.Group>
+              <div style={{ "textAlign": "center" }}>
+                <button type='submit' className='btn btn-primary reg-btn btn-lg'>Get Demo</button>
               </div>
             </Form>
           </div>
-          <div className='col-lg-5 d-flex align-items-center justify-content-center' >
-            <div className="d-flex flex-column align-items-center">
-              <div style={{ "background-color": "#f1f5f9", "borderRadius": "30px", "paddingLeft": "30px" ,"paddingRight":"30px","paddingTop":"25%","paddingBottom":"25%"}}>
-                <h2 className="fs-1 mb-3 text-uppercase fw-bold" style={{"textAlign":"center"}}>Get a demo</h2>
-                <p className="mb-5">Fill in the form and our team will get in <br />touch with you shortly to discuss your<br /> needs and arrange a personalized demo.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-{/* 
+      {/* 
       <div className='bg-dark text-light py-5'>
         <Reviews />
       </div> */}

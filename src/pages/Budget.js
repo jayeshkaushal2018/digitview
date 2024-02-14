@@ -1,8 +1,8 @@
 import React from 'react';
 import image1 from "../images/budget allocation/first.svg";
 import image2 from "../images/budget allocation/second.jpg";
-import image3 from "./../assets/about-page-img.jpgg";
-import AboutUs from "./sideImage.PNG";
+import image3 from "./../assets/about-page-img.jpg";
+import AboutUs from "./../assets/sideImage.PNG";
 import { AiTwotoneDollar } from "react-icons/ai";
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import ImageSlider from '../components/ImageSlider/ImageSlider';

@@ -42,7 +42,10 @@ const NavbarMenu = () => {
                     </a>
                     <ul>
                       <li>
-                        <a href="#">Pre-Event</a>
+                        <a href="#"> <Nav.Link
+                          href="/pre-event"
+                          style={{ "margin-right": "30px" }}
+                        >Pre-Event</Nav.Link></a>
                         <ul>
                           <li>
                             <a href="#">
@@ -97,7 +100,10 @@ const NavbarMenu = () => {
                         </ul>
                       </li>
                       <li>
-                        <a href="#">During-Event</a>
+                        <a href="#"><Nav.Link
+                          href="/during-event"
+                          style={{ "margin-right": "10px" }}
+                        >During-Event</Nav.Link></a>
                         <ul>
                           <li>
                             <a href="#">
@@ -152,7 +158,10 @@ const NavbarMenu = () => {
                         </ul>
                       </li>
                       <li>
-                        <a href="#">Post-Event</a>
+                        <a href="#"><Nav.Link
+                          href="/post-event"
+                          style={{ "margin-right": "30px" }}
+                        >Post-Event</Nav.Link></a>
 
                         <ul>
                           <li>

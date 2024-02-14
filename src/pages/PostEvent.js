@@ -30,7 +30,7 @@ function PostEvent() {
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{"marginLeft":"20%","marginTop":"40px"}}>
+                    <div className="row" style={{"marginLeft":"20%","marginRight":"20%","borderRadius":"15px","paddingLeft":"10%","paddingTop":"5%","paddingBottom":"5%","marginTop":"40px","backgroundColor":"#dfe6ea" }}>
                         <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>

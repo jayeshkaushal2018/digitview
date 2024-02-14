@@ -7,6 +7,7 @@ import { AiTwotoneDollar } from "react-icons/ai";
 import { IoTicket } from "react-icons/io5";
 import { FaBookReader } from "react-icons/fa";
 import { FaAdversal } from "react-icons/fa6";
+import EventFeatureIcon from '../components/EventFeatureIcon';
 const images = [{ url: image1 }, { url: image2 }];
 function PreEvent() {
     return (
@@ -19,7 +20,7 @@ function PreEvent() {
                 showNavs={"true"}
                 autoPlay={"true"}
                 autoPlayDelay={3.0} />
-            <div style={{ "marginBottom": "150px", "marginTop": "150px" }}>
+            <div style={{ "marginBottom": "150px", "marginTop": "150px"}}>
                     <div className="row">
                         <div className="col-lg-7 d-flex flex-column align-items-center justify-content-center" >
                             <div className="row">
@@ -29,67 +30,17 @@ function PreEvent() {
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{"marginLeft":"20%","marginTop":"40px"}}>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <AiTwotoneDollar size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Budget<br/>Allocation</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <IoTicket size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Ticket<br/>Purchase</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <FaBookReader size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>RSPV<br/>Management</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px" ,"padding":"25px"}}>
-                                    <FaAdversal size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "35px","textAlign":"center" }}>Promotion</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
-                            <div className="row">
-                                <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
-                                    <FaBookReader size={"5rem"}/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Vendor Management</h4>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="row" style={{"marginLeft":"20%","marginRight":"20%","borderRadius":"15px","paddingLeft":"10%","paddingTop":"5%","paddingBottom":"5%","marginTop":"40px","backgroundColor":"#dfe6ea" }}>
+                   
+                        <EventFeatureIcon content={"Budget Allocation"} icon={<AiTwotoneDollar size={"5rem"}/>} />
+                  
+                        <EventFeatureIcon content={"Ticket Purchase"} icon={<IoTicket size={"5rem"}/>} />
+                   
+                         <EventFeatureIcon content={"RSPV Management"} icon={<FaBookReader size={"5rem"}/>} />
+                  
+                        <EventFeatureIcon content={"Pre-event Promotion"} icon={<FaAdversal size={"5rem"}/>} />
+                
+                        <EventFeatureIcon content={"Vendor Management"} icon={<FaBookReader size={"5rem"}/>} />
                     </div>
             </div>
         </>

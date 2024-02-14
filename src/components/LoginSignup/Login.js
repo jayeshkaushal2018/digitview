@@ -1,8 +1,8 @@
 import React from "react";
 import "./LoginSignup.css";
-import User_icon from "../../pages/person.png";
-import email_icon from "../../pages/email.png";
-import password_icon from "../../pages/password.png";
+import User_icon from "./../../assets/person.png";
+import email_icon from "./../../assets/email.png";
+import password_icon from "./../../assets/password.png"
 import { useState } from "react";
 import axios from "axios";
 import { Link, Navigate, useNavigate } from "react-router-dom";
@@ -62,7 +62,6 @@ const LoginSignUp = () => {
         </div>
         <div className="input">
           <img src={email_icon} alt="" />
-          {/* <input type="email" placeholder="Email" /> */}
           <input
             type="text"
             value={email}
@@ -72,7 +71,6 @@ const LoginSignUp = () => {
         </div>
         <div className="input">
           <img src={password_icon} alt="" />
-          {/* <input type="password" placeholder="Password" /> */}
           <input
             type="password"
             value={password}
@@ -90,10 +88,10 @@ const LoginSignUp = () => {
       )}
 
       <div className="submit-container">
-        <Link to={`/signup`}>
+        <Link to={`/signup`} style={{ "textDecoration": 'none' ,"color": "#0778e2"}}>
           <div className={action === "Login" ? "submit gray" : "submit"}>
             {" "}
-            Submit
+            Sign Up
           </div>
         </Link>
         <div

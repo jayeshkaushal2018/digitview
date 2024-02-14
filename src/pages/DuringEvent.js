@@ -4,13 +4,10 @@ import ImageSlider from '../components/ImageSlider/ImageSlider';
 import image1 from "../images/budget allocation/first.svg";
 import image2 from "../images/budget allocation/second.jpg";
 import { FaBookReader } from "react-icons/fa";
-// import { BsCameraReelsFill } from "react-icons/bs";
-// import { FaDatabase } from "react-icons/fa6";
-// import { FaClone } from "react-icons/fa";
-// import { MdFeedback } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
 import { MdOutlineLiveTv } from "react-icons/md";
 import { SiPowervirtualagents } from "react-icons/si";
+import EventFeatureIcon from '../components/EventFeatureIcon';
 import { RiLiveLine } from "react-icons/ri";
 const images = [{ url: image1 }, { url: image2 }];
 function DuringEvent() {
@@ -34,8 +31,8 @@ function DuringEvent() {
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{"marginLeft":"20%","marginTop":"40px"}}>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
+                    <div className="row" style={{"marginLeft":"20%","marginRight":"20%","borderRadius":"15px","paddingLeft":"10%","paddingTop":"5%","paddingBottom":"5%","marginTop":"40px","backgroundColor":"#dfe6ea" }}>
+                        {/* <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
                                     <FaBookReader size={"5rem"}/>
@@ -46,8 +43,9 @@ function DuringEvent() {
                                     <h4 className="fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Attendees<br/>Management</h4>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
+                        </div> */}
+                        <EventFeatureIcon content={"Attendees Management"} icon={<FaBookReader size={"5rem"}/>} />
+                        {/* <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
                                     <FaUserFriends size={"5rem"}/>
@@ -58,8 +56,9 @@ function DuringEvent() {
                                     <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Networking<br/>Rooms</h4>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
+                        </div> */}
+                        <EventFeatureIcon content={"Networking Rooms"} icon={<FaUserFriends size={"5rem"}/>} />
+                        {/* <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
                                     <MdOutlineLiveTv size={"5rem"}/>
@@ -70,8 +69,9 @@ function DuringEvent() {
                                     <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Video<br/>BroadCasting</h4>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
+                        </div> */}
+                        <EventFeatureIcon content={"Video BroadCasting"} icon={<MdOutlineLiveTv size={"5rem"}/>} />
+                        {/* <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px" ,"padding":"25px"}}>
                                     <SiPowervirtualagents size={"5rem"}/>
@@ -82,8 +82,9 @@ function DuringEvent() {
                                     <h4 className=" fw-bold" style={{ "color": "#696969", "paddingTop": "0px","textAlign":"center" }}>Virtual Communication<br/>Tool</h4>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
+                        </div> */}
+                        <EventFeatureIcon content={"Virtual Communication"} icon={<SiPowervirtualagents size={"5rem"}/>} />
+                        {/* <div className="col-lg-2 d-flex flex-column align-items-center justify-content-center"  >
                             <div className="row">
                                 <div className="col-lg-12" style={{"backgroundColor":"white","border":"2px solid #3d9efa","borderRadius":"12px","padding":"25px"}}>
                                     <RiLiveLine size={"5rem"}/>
@@ -94,7 +95,9 @@ function DuringEvent() {
                                     <h4 className="  fw-bold" style={{ "color": "#696969", "paddingTop": "15px","textAlign":"center" }}>Live Event<br/>Status</h4>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        
+                        <EventFeatureIcon content={"Live Event Status"} icon={<RiLiveLine size={"5rem"}/>} />
                     </div>
             </div>
         </>
