@@ -21,16 +21,8 @@ const LoginSignUp = () => {
         password: password,
       })
       .then((result) => {
-        console.log("hi");
-        console.log(result.data);
-        // const user = jwtDecode(result.data.token)
-        // console.log("this is token")
         localStorage.setItem("token", result.data.token);
-        // if(user == "organizer"){
         Navigate("/event-organize");
-        // }else{
-        //   Navigate('/EventAtt')
-        // }
       })
       .catch((error) => {
         alert("service error");

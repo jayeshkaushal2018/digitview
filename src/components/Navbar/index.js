@@ -166,52 +166,35 @@ const NavbarMenu = () => {
                         <ul>
                           <li>
                             <a href="#">
-                              <Nav.Link
-                                href="/post-promotion"
-                                style={{ "margin-right": "30px" }}
-                              >
+                              <Nav.Link href="/post-promotion">
                                 Post&nbsp;Event&nbsp;Promotion
                               </Nav.Link>
                             </a>
                           </li>
                           <li>
                             <a href="#">
-                              <Nav.Link
-                                href="/event-recording"
-                                style={{ "margin-right": "30px" }}
-                              >
+                              <Nav.Link href="/event-recording">
                                 Event&nbsp;Recording
                               </Nav.Link>
                             </a>
                           </li>
                           <li>
                             <a href="#">
-                              <Nav.Link
-                                href="/audience-data"
-                                style={{ "margin-right": "30px" }}
-                              >
+                              <Nav.Link href="/audience-data">
                                 Audience&nbsp;Data&nbsp;Management
                               </Nav.Link>
                             </a>
                           </li>
                           <li>
                             <a href="#">
-                              <Nav.Link
-                                href="/clone-event"
-                                style={{ "margin-right": "30px" }}
-                              >
+                              <Nav.Link href="/clone-event">
                                 Clone&nbsp;Events
                               </Nav.Link>
                             </a>
                           </li>
                           <li>
                             <a href="#">
-                              <Nav.Link
-                                href="/feedback"
-                                style={{ "margin-right": "30px" }}
-                              >
-                                Feedback
-                              </Nav.Link>
+                              <Nav.Link href="/feedback">Feedback</Nav.Link>
                             </a>
                           </li>
                         </ul>
