@@ -38,6 +38,7 @@ import FeaturePage from "./components/FeaturePage/FeaturePage";
 import PostEvent from "./pages/PostEvent";
 import DuringEvent from "./pages/DuringEvent";
 import NavbarMenu from "./components/Navbar";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
   return (
@@ -55,7 +56,9 @@ function App() {
         <Route path="/eventOrg" element={<EventOrg />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/events" element={<Event />} />
-        <Route path="/event-organize" element={<EventsOrganization />} />
+        <Route exact path="/" element={<PrivateRoute />}>
+          <Route path="/event-organize" element={<EventsOrganization />} />
+        </Route>
         <Route path="/pre-event" element={<PreEvent />} />
         <Route path="/budget" element={<Budget />} />
         <Route path="/ticket" element={<Ticket />} />
@@ -64,7 +67,10 @@ function App() {
         <Route path="/attendance" element={<Attandance />} />
         <Route path="/networking" element={<Networking />} />
         <Route path="/broadcasting" element={<VideoCasting />} />
-        <Route path="/virtual-communication" element={<VirtualCommunication />}/>
+        <Route
+          path="/virtual-communication"
+          element={<VirtualCommunication />}
+        />
         <Route path="/event-status" element={<LiveEventStatus />} />
         <Route path="/post-promotion" element={<PostPromotion />} />
         <Route path="/event-recording" element={<EventRecording />} />
@@ -80,9 +86,6 @@ function App() {
         <Route path="/during-event" element={<DuringEvent />} />
       </Routes>
 
-      {/* <footer className="bg-body-tertiary"> */}
-      {/* <p className="p-3 m-0 text-center">copyright @ made by Ionut Cora</p> */}
-      {/* </footer> */}
       <Footer />
     </div>
   );
