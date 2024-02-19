@@ -9,6 +9,7 @@ import FilterEvents from "./pages/FilterEvents/FilterEvents";
 import EventDetails from "./pages/EventDetails/EventDetails";
 import Products from "./pages/Products";
 import Login from "./components/LoginSignup/Login";
+import Event from "./pages/Event";
 import EventOrg from "./pages/EventOrg/EventOrg";
 import EventsOrganization from "./components/Events";
 import PreEvent from "./pages/PreEvent";
@@ -35,6 +36,9 @@ import PostEvent from "./pages/PostEvent";
 import DuringEvent from "./pages/DuringEvent";
 import PrivateRoute from "./PrivateRoute";
 import Signup from "./components/LoginSignup/Signup";
+import OnBording from "./pages/OnBording";
+import DemoVideo from "./pages/DemoVideo";
+import BootstrapCarousel from "./components/ImageSlider/BootstrapCarousel";
 
 const Routing = () => {
   return (
@@ -49,6 +53,7 @@ const Routing = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/eventOrg" element={<EventOrg />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/events" element={<Event />} />
       <Route exact path="/" element={<PrivateRoute />}>
         <Route path="/event-organize" element={<EventsOrganization />} />
       </Route>
@@ -67,13 +72,15 @@ const Routing = () => {
       <Route path="/audience-data" element={<AudienceData />} />
       <Route path="/clone-event" element={<CloneEvent />} />
       <Route path="/feedback" element={<Feedback />} />
-      <Route path="/demo" element={<Demo />} />
+      <Route path="/demo" element={<DemoVideo />} />
       <Route path="/rspv" element={<RsvpPage />} />
       <Route path="/vendor" element={<Vendor />} />
       <Route path="/about" element={<NewAboutUs />} />
       <Route path="/feature" element={<FeaturePage />} />
       <Route path="/post-event" element={<PostEvent />} />
       <Route path="/during-event" element={<DuringEvent />} />
+      <Route path="/onbording" element={<OnBording />} />
+      <Route path="/newimage" element={<BootstrapCarousel />} />
     </Routes>
   );
 };

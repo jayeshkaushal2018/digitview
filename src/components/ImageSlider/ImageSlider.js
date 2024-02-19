@@ -1,9 +1,14 @@
 import SimpleImageSlider from "react-simple-image-slider";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function ImageSlider(props) {
 
     return (<>
-        <div style={{ marginLeft: props.marginLeft, marginTop: props.marginTop ,marginBottom:"100px"}}>
+     <Container>
+      <Row>
+        <Col><div style={{ }}>
             <SimpleImageSlider
                 width={props.width}
                 height={props.height}
@@ -11,7 +16,10 @@ function ImageSlider(props) {
                 showBullets={props.showBullets}
                 showNavs={props.showNavs}
             />
-        </div>
+        </div></Col>
+      </Row>
+    </Container>
+        
     </>)
 }
 

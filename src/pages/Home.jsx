@@ -1,10 +1,8 @@
 import React from 'react';
-import { MenuBtn } from '../components/MenuBtn';
 import './Home.css';
 import AboutImg from '../utils/img/about-img.jpg';
 import { Link } from 'react-router-dom';
-import HomeImg from '../utils/img/header-img.jpg'
-import { ImageGallery } from '../components/ImageGallery';
+import HomeImg from '../utils/img/header-img.jpg';
 import { ContactInfo } from '../components/ContactInfo';
 import ContactImage from '../utils/img/contact-img.jpg';
 
@@ -21,7 +19,7 @@ function Home() {
                         </div>
                         <div className='col-sm-7 d-flex d-sm-block flex-column align-items-center' style={{"borderRadius":"8px"}}>
 
-                        <img src={HomeImg} className='img-fluid w-55' alt="about img" />
+                        <img src={HomeImg} className='img-fluid w-55' alt="about img"  style={{"mixBlendMode":"multiply"}}/>
                         </div>
                     </div>
                 </div>

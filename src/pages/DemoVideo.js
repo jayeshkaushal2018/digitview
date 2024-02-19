@@ -1,8 +1,13 @@
 import React from 'react';
 import './demo.css';
 import { Form } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
-function demo() {
+function DemoVideo() {
+  const navigate = useNavigate("/onbording");
+  const onBorad = () => {
+    navigate("/onbording");
+  };
   return (
     <div className='contact-page'>
       <header className='mt-5'>
@@ -24,26 +29,26 @@ function demo() {
             <Form>
               <Form.Group className='mb-4'>
                 <Form.Label htmlFor='first-name'><b>First Name</b></Form.Label>
-                <Form.Control type='text' id='first-name' placeholder="Jerry"/>
+                <Form.Control type='text' id='first-name' placeholder="Enter First name"/>
               </Form.Group>
               <Form.Group className='mb-4'>
                 <Form.Label htmlFor='last-name'><b>Last Name</b></Form.Label>
-                <Form.Control type='text' id='last-name' placeholder="Thomas"/>
+                <Form.Control type='text' id='last-name' placeholder="Enter Last name"/>
               </Form.Group>
               <Form.Group className='mb-4'>
                 <Form.Label htmlFor='email-address'><b>Email Address</b></Form.Label>
-                <Form.Control type='email' id='email-address' placeholder="jerrythomas@gmail.com" />
+                <Form.Control type='email' id='email-address' placeholder="name@gmail.com" />
               </Form.Group>
               <Form.Group className='mb-4'>
                 <Form.Label htmlFor='phone-number'><b>Phone Number</b></Form.Label>
-                <Form.Control type='tel' id='phone-number' placeholder="987654321" />
+                <Form.Control type='tel' id='phone-number' placeholder="Ex :987654321" />
               </Form.Group>
               <Form.Group className='mb-4'>
                 <Form.Label htmlFor='message'><b>Your Message</b></Form.Label>
                 <textarea className="form-control" id="message" rows="5" placeholder="Message"/>
               </Form.Group>
               <div style={{ "textAlign": "center" }}>
-                <button type='submit' className='btn btn-primary reg-btn btn-lg'>Get Demo</button>
+                <button type='submit' className='btn btn-primary reg-btn btn-lg' onClick={onBorad}>Get Demo</button>
               </div>
             </Form>
           </div>
@@ -57,4 +62,4 @@ function demo() {
   )
 }
 
-export default demo;
+export default DemoVideo;
