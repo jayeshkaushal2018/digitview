@@ -39,6 +39,7 @@ import Signup from "./components/LoginSignup/Signup";
 import OnBording from "./pages/OnBording";
 import DemoVideo from "./pages/DemoVideo";
 import BootstrapCarousel from "./components/ImageSlider/BootstrapCarousel";
+import Footer from "./pages/Footer";
 
 const Routing = () => {
   return (
@@ -81,6 +82,7 @@ const Routing = () => {
       <Route path="/during-event" element={<DuringEvent />} />
       <Route path="/onbording" element={<OnBording />} />
       <Route path="/newimage" element={<BootstrapCarousel />} />
+      <Route path="/f" element={<Footer/>} />
     </Routes>
   );
 };
