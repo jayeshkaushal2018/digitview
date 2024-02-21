@@ -16,29 +16,7 @@ const Footer = () => {
   return (
     <>
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
-        {/* <div
-          className="text-center p-4"
-          style={{ "background-color": "rgba(0, 0, 0, 0.05)" }}
-        >
-          <i className="fas fa-gem me-3">
-            <FaFacebook size={25} />
-          </i>
-          <i className="fas fa-gem me-3">
-            <BsGithub size={25} />
-          </i>
-          <i className="fas fa-gem me-3">
-            <BsInstagram size={25} />
-          </i>
-          <i className="fas fa-gem me-3">
-            <BsTwitter size={25} />
-          </i>
-          <i className="fas fa-gem me-3">
-            <FaGoogle size={25} />
-          </i>
-          <i className="fas fa-gem me-3">
-            <FaLinkedin size={25} />
-          </i>
-        </div> */}
+     
         <section className="" style={{ paddingTop: "10px" }}>
           <Container className="container text-center text-md-start mt-5">
             <Row>

@@ -11,8 +11,8 @@ import Col from 'react-bootstrap/Col';
 
 function Home() {
     return (
-        <div className='home-page'>
-            <header className='h-100 min-vh-100 d-flex align-items-center text-light shadow'>
+        <div className='home-page bg-body-secondary' >
+            <header className='h-100 min-vh-100 d-flex align-items-center text-light shadow bg-white'>
                 <div className='container'>
                     <Container>
                     {/* <div className='row'> */}
@@ -35,7 +35,7 @@ function Home() {
                 </div>
             </header>
 
-            <div className='container my-5'>
+            <div className='container my-5 ' >
                 <div className='row'>
                     <div className='col-lg-6 d-flex justify-content-center d-none d-lg-flex'>
                         <img src={AboutImg} className='img-fluid w-50' alt="about img" />
