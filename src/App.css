@@ -378,3 +378,6 @@ li > a:only-child:after {
   color: #fff;
   cursor: pointer;
 }
+.about_us{
+  background: #dedede;
+}
