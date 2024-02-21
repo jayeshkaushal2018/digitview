@@ -371,3 +371,13 @@ li > a:only-child:after {
 .footer-brand {
   display: inline;
 }
+.footer_icons{
+  background: #0070E6;
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.about_us{
+  background: #dedede;
+}

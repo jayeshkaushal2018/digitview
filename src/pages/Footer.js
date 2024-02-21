@@ -18,9 +18,9 @@ const Footer = () => {
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
      
         <section className="" style={{ paddingTop: "10px" }}>
-          <Container className="container text-center text-md-start mt-5">
+          <Container className="container text-center text-md-start mt-5 pb-5">
             <Row>
-              <Col className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <Col className="col-md-3 col-lg-4 col-xl-3 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <i className="fas fa-gem me-3">
                     <FaGem />
@@ -49,25 +49,31 @@ const Footer = () => {
                   </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 "><h6 className="mb-4 ">
-                    <Link to="/partner" className="navbar-brand  fw-semibold">
-                    Partnership
+                  <h6 className="mb-4 ">
+                    <h6 className="mb-4 ">
+                      <Link to="/partner" className="navbar-brand  fw-semibold">
+                        Partnership
+                      </Link>
+                    </h6>
+                  </h6>
+                </p>
+                <p>
+                  <h6 className="mb-4 ">
+                    <Link to="/contact" className="navbar-brand  fw-semibold">
+                      Contact Us
                     </Link>
-                  </h6></h6>
+                  </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 "><Link to="/contact" className="navbar-brand  fw-semibold">
-                  Contact Us
-                    </Link></h6>
-                </p>
-                <p>
-                  <h6 className="mb-4 "><Link to="/demo" className="navbar-brand  fw-semibold">
-                  Get a Demo
-                    </Link></h6>
+                  <h6 className="mb-4 ">
+                    <Link to="/demo" className="navbar-brand  fw-semibold">
+                      Get a Demo
+                    </Link>
+                  </h6>
                 </p>
               </Col>
 
-              <Col className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <Col className="col-md-2 col-lg-2 col-xl-2 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <i className="fas fa-gem me-3">
                     <FaProductHunt />
@@ -75,9 +81,14 @@ const Footer = () => {
                   Products
                 </h6>
                 <p>
-                  <h6 className="mb-4 "><Link to="/whydigiview" className="navbar-brand  fw-semibold">
-                  Why DigiView
-                    </Link></h6>
+                  <h6 className="mb-4 ">
+                    <Link
+                      to="/whydigiview"
+                      className="navbar-brand  fw-semibold"
+                    >
+                      Why DigiView
+                    </Link>
+                  </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Pre-Event</h6>
@@ -99,7 +110,7 @@ const Footer = () => {
                 </p>
               </Col>
 
-              <Col className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <Col className="col-md-3 col-lg-2 col-xl-2 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <i className="fas fa-gem me-3">
                     <SiAnswer />
@@ -129,7 +140,7 @@ const Footer = () => {
                 </p>
               </Col>
 
-              <Col className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <Col className="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <i className="fas fa-gem me-3">
                     <AiOutlineGlobal />
@@ -152,66 +163,37 @@ const Footer = () => {
                   <h6 className="mb-4 ">Accessibility Statement</h6>
                 </p>
               </Col>
-
-              {/* <Col className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3">
-                    <IoMdContact />
-                  </i>
-                  Contact
-                </h6>
-                <p>
-                  <i className="fas fa-home me-3">
-                    <FaLocationDot />
-                  </i>{" "}
-                  New York, NY 10012, US
-                </p>
-                <p>
-                  <i className="fas fa-envelope me-3">
-                    <MdEmail />
-                  </i>
-                  info@example.com
-                </p>
-                <p>
-                  <i className="fas fa-phone me-3">
-                    <FaPhone />
-                  </i>{" "}
-                  + 01 234 567 88
-                </p>
-                <p>
-                  <i className="fas fa-print me-3">
-                    <FaPhone />
-                  </i>{" "}
-                  + 01 234 567 89
-                </p>
-              </Col> */}
             </Row>
-            <Row></Row>
+            <div className="d-flex justify-content-center">
+              <i className="fas fa-gem me-3">
+                <FaFacebook
+                  size={24}
+                  className="footer_icons"
+                  title="Facebook"
+                />
+              </i>
+              <i className="fas fa-gem me-3">
+                <BsGithub size={24} className="footer_icons" title="Github" />
+              </i>
+              <i className="fas fa-gem me-3">
+                <BsInstagram
+                  size={24}
+                  className="footer_icons"
+                  title="Instagram"
+                />
+              </i>
+              <i className="fas fa-gem me-3">
+                <BsTwitter size={24} className="footer_icons" title="Twitter" />
+              </i>
+              <i className="fas fa-gem me-3">
+                <FaGoogle size={24} className="footer_icons" title="Google" />
+              </i>
+              <i className="fas fa-gem me-3">
+                <FaLinkedin size={24} className="footer_icons" title="Linked" />
+              </i>
+            </div>
           </Container>
         </section>
-        <div style={{ "background-color": "rgba(0, 0, 0, 0.05)" }}>
-          <p style={{ float: "left", paddingLeft: "40px" }}>© 2021 Copyright:</p>
-          <p style={{ float: "right", paddingRight: "40px" }}>
-            <i className="fas fa-gem me-3">
-              <FaFacebook size={25} />
-            </i>
-            <i className="fas fa-gem me-3">
-              <BsGithub size={25} />
-            </i>
-            <i className="fas fa-gem me-3">
-              <BsInstagram size={25} />
-            </i>
-            <i className="fas fa-gem me-3">
-              <BsTwitter size={25} />
-            </i>
-            <i className="fas fa-gem me-3">
-              <FaGoogle size={25} />
-            </i>
-            <i className="fas fa-gem me-3">
-              <FaLinkedin size={25} />
-            </i>
-          </p>
-        </div>
       </footer>
     </>
   );
