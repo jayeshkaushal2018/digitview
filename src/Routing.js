@@ -27,7 +27,6 @@ import EventRecording from "./pages/EventRecording";
 import AudienceData from "./pages/AudienceData";
 import CloneEvent from "./pages/CloneEvent";
 import Feedback from "./pages/Feedback";
-import Demo from "./pages/demo";
 import RsvpPage from "./pages/RsvpPage";
 import Vendor from "./pages/Vendor";
 import NewAboutUs from "./pages/NewAboutUs";
@@ -39,7 +38,10 @@ import Signup from "./components/LoginSignup/Signup";
 import OnBording from "./pages/OnBording";
 import DemoVideo from "./pages/DemoVideo";
 import BootstrapCarousel from "./components/ImageSlider/BootstrapCarousel";
-import Footer from "./pages/Footer";
+import Career from "./pages/Career";
+import Support from "./pages/Support";
+import Partnership from "./pages/Partnership";
+import WhyDigiView from "./pages/WhyDigiView";
 
 const Routing = () => {
   return (
@@ -82,7 +84,10 @@ const Routing = () => {
       <Route path="/during-event" element={<DuringEvent />} />
       <Route path="/onbording" element={<OnBording />} />
       <Route path="/newimage" element={<BootstrapCarousel />} />
-      <Route path="/f" element={<Footer/>} />
+      <Route path="/career" element={<Career/>} />
+      <Route path="/support" element={<Support/>} />
+      <Route path="/partner" element={<Partnership/>} />
+      <Route path="/whydigiview" element={<WhyDigiView /> } />
     </Routes>
   );
 };

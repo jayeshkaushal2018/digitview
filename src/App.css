@@ -366,3 +366,8 @@ li > a:after {
 li > a:only-child:after {
   content: "";
 }
+
+
+.footer-brand {
+  display: inline;
+}
