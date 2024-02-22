@@ -16,7 +16,6 @@ const Footer = () => {
   return (
     <>
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
-     
         <section className="" style={{ paddingTop: "10px" }}>
           <Container className="container text-center text-md-start mt-5 pb-5">
             <Row>
@@ -103,10 +102,18 @@ const Footer = () => {
                   <h6 className="mb-4 ">Registration</h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Mobile Apps</h6>
+                  <h6 className="mb-4 ">
+                    <Link to="/mobileapp" className="navbar-brand  fw-semibold">
+                      Mobile Apps
+                    </Link>
+                  </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Analytics & Reporting</h6>
+                  <h6 className="mb-4 ">
+                  <Link to="/analytic" className="navbar-brand  fw-semibold">
+                    Analytics & Reporting
+                    </Link>
+                    </h6>
                 </p>
               </Col>
 

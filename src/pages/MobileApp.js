@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import MobileImage from "./../assets/support.png";
+import Connect from "./../assets/connection.png";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { FaArrowRight } from "react-icons/fa6";
@@ -14,6 +15,10 @@ import { IoSync } from "react-icons/io5";
 import { AiFillAppstore } from "react-icons/ai";
 import { HiRocketLaunch } from "react-icons/hi2";
 import { MdVisibility } from "react-icons/md";
+import ListGroup from 'react-bootstrap/ListGroup';
+import Engaging from "./../assets/engaging.png"
+import { CgSmileSad } from "react-icons/cg";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
 
 function MobileApp() {
   return (
@@ -255,14 +260,102 @@ function MobileApp() {
             }}
           >
             <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
-              <b>Publish your event <br/> apps in minutes</b>
+              <b>
+                Publish your event <br /> apps in minutes
+              </b>
             </h1>
             <p style={{ textAlign: "center", fontSize: "1.3vw" }}>
-            We make it easy for you to design, test and publish <br/>your event apps in minutes. This means that all <br/> attendees and event staff can access your apps <br/> from their Apple or Android devices.
+              We make it easy for you to design, test and publish <br />
+              your event apps in minutes. This means that all <br /> attendees
+              and event staff can access your apps <br /> from their Apple or
+              Android devices.
             </p>
           </Col>
         </Row>
+        <Row style={{ "marginBottom":'30vw' }}>
+          <Col style={{  textAlign: "left" ,"marginLeft":"40px"}}>
+            <Card style={{ width: "95%" }}>
+              <Card.Img
+                variant="top"
+                src={Connect}
+                style={{ "border": "none" ,"width":"500px","height":"400px"}}
+                 backgroundColor =" blue"
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "red" }}>
+                 <h4><b>CURRENT EVENT APPS</b></h4>
+                </Card.Title>
+                <Card.Text style={{"fontSize":"40px"}}>
+                  <b>Lack of connection<br/> and oversight.</b>
+                </Card.Text>
+                <Card.Text style={{"fontSize":"20px"}}>
+                  <p>Many event managers face numerous <br/> challenges in engaging and
+                  interacting with <br/> attendees during events, all whilst ensuring<br/>
+                  everything is running smoothly
+                  </p>
+                </Card.Text>
+                <ListGroup variant="flush">
+                  <ListGroup.Item  style={{"border":"none"}}><CgSmileSad color ={'red'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "Networking and gamification options are lacking"</b></ListGroup.Item>
+                  <ListGroup.Item  style={{"border":"none"}}><CgSmileSad color ={'red'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "We struggle to engage attendees effectively"</b></ListGroup.Item>
+                  <ListGroup.Item  style={{"border":"none"}}><CgSmileSad color ={'red'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "It’s difficult to send last-minute alerts and updates"</b></ListGroup.Item>
+                </ListGroup>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col >
+          <Card style={{ width: "95%" }}>
+              <Card.Img
+                variant="top"
+                src={Engaging}
+                style={{ "border": "none" ,"width":"500px","height":"400px"}}
+                
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "#0070E6" }}>
+                 <h4><b>WITH DIGIVIEW</b> </h4>
+                </Card.Title>
+                <Card.Text style={{"fontSize":"40px"}}>
+                  <b>Engaging, effective, and easy..</b>
+                </Card.Text>
+                <Card.Text style={{"fontSize":"20px"}}>
+                  <p>DigitView custom event apps empowers event <br/>managers to streamline every aspect of their <br/> event and fostering engagement all from their<br/> mobile
+                  </p>
+                </Card.Text>
+                <ListGroup variant="flush">
+                  <ListGroup.Item  style={{"border":"none"}}><HiOutlineEmojiHappy color ={'#0070E6'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "All data is seamlessly synchronized across our apps"</b></ListGroup.Item>
+                  <ListGroup.Item  style={{"border":"none"}}><HiOutlineEmojiHappy color ={'#0070E6'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "Our attendees stay informed with real-time updates"</b></ListGroup.Item>
+                  <ListGroup.Item  style={{"border":"none"}}><HiOutlineEmojiHappy color ={'#0070E6'}  size ={'2rem'} /><b style={{"fontSize":"16px"}}> "We love the networking and gamification options"</b></ListGroup.Item>
+                </ListGroup>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
+      <div
+        style={{
+          backgroundColor: "#dfe6ea",
+          padding: "120px",
+          marginTop: "100px",
+        }}
+      >
+        <h1 style={{ textAlign: "center", fontSize: "4.8vw" }}>
+        See the platform <br/> in action
+        </h1>
+        <p style={{ textAlign: "center", fontSize: "1.3vw" }}>
+        Add the new factor to your next event. Find out <br/> how DigiView can power your success.{" "}
+        </p>
+        <div style={{ textAlign: "center" }}>
+          <button
+            type="button"
+            className="btn btn-primary btn-lg"
+            style={{ width: "10vw" }}
+          >
+            <p style={{ textAlign: "center", fontSize: "1vw" }}>
+              <b>Get a demo</b>
+            </p>
+          </button>
+        </div>
+      </div>
     </>
   );
 }

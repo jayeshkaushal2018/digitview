@@ -43,6 +43,7 @@ import Support from "./pages/Support";
 import Partnership from "./pages/Partnership";
 import WhyDigiView from "./pages/WhyDigiView";
 import MobileApp from "./pages/MobileApp";
+import Analytic from "./pages/Analytic";
 
 const Routing = () => {
   return (
@@ -90,6 +91,7 @@ const Routing = () => {
       <Route path="/partner" element={<Partnership/>} />
       <Route path="/whydigiview" element={<WhyDigiView /> } />
       <Route path="/mobileapp" element={<MobileApp />} />
+      <Route path="/analytic" element={<Analytic />} />
     </Routes>
   );
 };
