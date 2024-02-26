@@ -3,15 +3,17 @@ import NavbarMenu from "./components/Navbar";
 import Footer from "./pages/Footer.js";
 import Routing from "./Routing";
 import "./App.css";
+import { useLocation } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const location = useLocation();
   return (
     <div>
-      <NavbarMenu />
+      {location.pathname !== "/log-in" ? <NavbarMenu /> : null}
       <Routing />
-      <Footer />
+      {location.pathname !== "/log-in" ? <Footer /> : null}
     </div>
   );
-}
+};
 
 export default App;

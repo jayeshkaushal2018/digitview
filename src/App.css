@@ -366,18 +366,69 @@ li > a:after {
 li > a:only-child:after {
   content: "";
 }
-
-
-.footer-brand {
+fon .footer-brand {
   display: inline;
 }
-.footer_icons{
-  background: #0070E6;
+.footer_icons {
+  background: #0070e6;
   padding: 3px;
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
 }
-.about_us{
+.about_us {
   background: #dedede;
+}
+
+.login-page {
+  .col {
+    height: 100vh;
+  }
+  .form-container {
+    width: 50%;
+  }
+  b {
+    h3 {
+      color: #192437;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+  .login {
+    background: #0070e6;
+    font-weight: 600;
+  }
+  .brand-name {
+    color: #0070e6;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h6 {
+    display: flex;
+    font-size: 14px;
+    margin-top: 15px;
+    justify-content: center;
+    button {
+      padding: 0px;
+      font-size: 14px;
+      line-height: 0;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 4px;
+      color: #0070e6 !important;
+    }
+  }
+  .background-img {
+    background: #0070e6;
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-weight: 700;
+      font-size: 30px;
+      color: #ffffff;
+      margin-top: 40%;
+    }
+  }
 }
