@@ -6,7 +6,9 @@ const LoginPage = () => {
       <Row className="mx-0">
         <Col className="d-flex justify-content-center align-items-center">
           <div className="form-container">
-            <h3 className="brand-name">DigiView.</h3>
+            <a href="/">
+              <h3 className="brand-name">DigiView.</h3>
+            </a>
 
             <b>
               <h3>Log in to your Account </h3>
@@ -25,18 +27,24 @@ const LoginPage = () => {
                 <Form.Control type="email" placeholder="Password" />
               </Form.Group>
 
-              <Button variant="primary" className="login">Log in</Button>
-             <div className="text-center">
-             <h6>
-                Don't have an account?{" "}
-                <Button variant="link">Create your account</Button>
-              </h6>
-             </div>
+              <Button variant="primary" className="login">
+                Log in
+              </Button>
+              <div className="text-center">
+                <h6>
+                  Don't have an account?{" "}
+                  <Button variant="link">Create your account</Button>
+                </h6>
+              </div>
             </Form>
           </div>
         </Col>
         <Col className="background-img">
-          <p>Welcome to DigiView</p>
+          <div>
+            <p className="welcome">Welcome to DigiView</p>
+
+            <p>Event Management Platform</p>
+          </div>
         </Col>
       </Row>
     </div>

@@ -423,12 +423,14 @@ fon .footer-brand {
     background: #0070e6;
     display: flex;
     justify-content: center;
-
+.welcome{
+  margin-top: 60%;
+}
     p {
       font-weight: 700;
       font-size: 30px;
       color: #ffffff;
-      margin-top: 40%;
+      text-align: center;
     }
   }
 }
