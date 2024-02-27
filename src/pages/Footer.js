@@ -147,7 +147,9 @@ const Footer = () => {
                   </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Event Integrations</h6>
+                  <h6 className="mb-4 ">
+                  <Link to="/open-api" className="navbar-brand  fw-semibold">Event Integrations</Link>
+                  </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Smart Connectors</h6>

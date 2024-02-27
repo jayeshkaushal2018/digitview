@@ -3,8 +3,9 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import login from "../../assets/images/celebration-pana.svg";
+
 
 const LoginPage = () => {
   const [isSignup, setSignup] = useState(true);
@@ -58,9 +59,17 @@ const LoginPage = () => {
       <Row className="mx-0">
         <Col className="d-flex justify-content-center align-items-center">
           <div className="form-container">
-            <a href="/">
-              <h3 className="brand-name">DigiView.</h3>
-            </a>
+            {/* <a href="/">
+              <h3 className="brand-name"> */}  
+              <Link
+              to="/"
+              className="brand-name fw-semibold"
+              style={{ "margin-right": "30px" ,"textDecoration": 'none'}}
+            >
+                <h1>DigiView</h1>
+                </Link>
+                {/* </h3>
+            </a> */}
             {isSignup ? (
               <>
                 <b>

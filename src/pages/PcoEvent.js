@@ -6,6 +6,9 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import conference from "./../assets/conference_01.jpg";
 import { FaCheck } from "react-icons/fa";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import { TfiAngleDown } from "react-icons/tfi";
 
 function PcoEvent() {
   return (
@@ -268,6 +271,102 @@ function PcoEvent() {
             <p style={{ textAlign: "left", fontSize: "0.9vw" }}>
               <b><FaCheck color="#0070E6"/>	Control access to sessions and functions</b>
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{"marginBottom":"25vh"}}>
+            <div
+              style={{
+                backgroundColor: "#dfe6ea",
+                // padding: "6.25vw",
+                padding:'2vw',
+                marginTop: "9vh",
+              }}
+            >
+              <h1 style={{ textAlign: "center", fontSize: "3.0vw" ,"marginBottom":"1.5vw"}}>
+              Perfect for PCOs and agencies
+              </h1>
+            
+          {/* </Col>
+          <Col> */}
+            <CardGroup>
+              <Card
+                style={{
+                  marginRight: "3.2vw",
+                  borderStyle: "solid",
+                  borderWidth: "thin",
+                  borderColor: "grey",
+                  borderRadius: "10px",
+                }}
+              >
+                <Card.Body style={{ textAlign: "center" }}>
+                  <Card.Title style={{ textAlign: "center" }}>
+                    <TfiAngleDown  size={"2.5vw"} color="#0070e6" />
+                  </Card.Title>
+                  <Card.Title>
+                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
+                      <b>Automate tasks</b>
+                    </p>
+                  </Card.Title>
+                  <Card.Text>
+                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
+                    Enhance your team’s efficiency with <br/>automated work-flows
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card
+                style={{
+                  marginRight: "3.2vw",
+                  borderStyle: "solid",
+                  borderWidth: "thin",
+                  borderColor: "grey",
+                  borderRadius: "10px",
+                }}
+              >
+                <Card.Body style={{ textAlign: "center" }}>
+                  <Card.Title style={{ textAlign: "center" }}>
+                    <TfiAngleDown  size={"2.5vw"} color="#0070e6" />
+                  </Card.Title>
+                  <Card.Title>
+                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
+                      <b>Forget coding</b>
+                    </p>
+                  </Card.Title>
+                  <Card.Text>
+                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
+                    Easily build websites and registration <br/> with drag and drop functionality.
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card
+                style={{
+                  marginRight: "3.2vw",
+                  borderStyle: "solid",
+                  borderWidth: "thin",
+                  borderColor: "grey",
+                  borderRadius: "10px",
+                }}
+              >
+                <Card.Body style={{ textAlign: "center" }}>
+                  <Card.Title style={{ textAlign: "center" }}>
+                    <TfiAngleDown  size={"2.5vw"} color="#0070e6" />
+                  </Card.Title>
+                  <Card.Title>
+                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
+                      <b>Brand showcase</b>
+                    </p>
+                  </Card.Title>
+                  <Card.Text>
+                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
+                    White label EventsAir to meet your <br/>client’s specific brand requirements.
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </CardGroup>
+            </div>
           </Col>
         </Row>
       </Container>

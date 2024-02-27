@@ -440,8 +440,9 @@ fon .footer-brand {
     background-image: linear-gradient(
       to right bottom,
       #0070e6,
-      #0070e6,
-      #0070e6,
+      #26a7f7,
+      #5fc5fb,
+     /* #0070e6,
       #0070e6,
       #0070e6,
       #0078e9,
@@ -450,7 +451,9 @@ fon .footer-brand {
       #0497f4,
       #26a7f7,
       #43b6fa,
-      #5fc5fb
+      #5fc5fb  */
+      white
+     
     );
     display: flex;
     justify-content: center;

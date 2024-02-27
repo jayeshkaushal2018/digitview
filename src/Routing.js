@@ -47,6 +47,7 @@ import Analytic from "./pages/Analytic";
 import InPerson from "./pages/InPerson";
 import PcoEvent from "./pages/PcoEvent";
 import LoginPage from "./pages/LoginPage";
+import OpenApi from "./pages/Openapi";
 
 const Routing = () => {
   return (
@@ -98,6 +99,7 @@ const Routing = () => {
       <Route path="/in-person" element={<InPerson />} />
       <Route path="/pco-event" element={<PcoEvent />} />
       <Route path="/log-in" element={<LoginPage />} />
+      <Route path="/open-api" element={<OpenApi />} />
     </Routes>
   );
 };
