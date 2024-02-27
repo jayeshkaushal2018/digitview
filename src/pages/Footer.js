@@ -125,7 +125,9 @@ const Footer = () => {
                   Soultions
                 </h6>
                 <p>
-                  <h6 className="mb-4 ">In-Person Events</h6>
+                  <h6 className="mb-4 ">
+                  <Link to="/in-person" className="navbar-brand  fw-semibold">In-Person Events </Link>
+                    </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Virtual Events</h6>
@@ -138,6 +140,11 @@ const Footer = () => {
                 </p>
                 <p>
                   <h6 className="mb-4 ">Live Event Services</h6>
+                </p>
+                <p>
+                  <h6 className="mb-4 ">
+                  <Link to="/pco-event" className="navbar-brand  fw-semibold">PCOs and Event Agencies </Link>
+                  </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Event Integrations</h6>

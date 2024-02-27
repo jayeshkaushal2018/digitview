@@ -44,8 +44,9 @@ import Partnership from "./pages/Partnership";
 import WhyDigiView from "./pages/WhyDigiView";
 import MobileApp from "./pages/MobileApp";
 import Analytic from "./pages/Analytic";
+import InPerson from "./pages/InPerson";
+import PcoEvent from "./pages/PcoEvent";
 import LoginPage from "./pages/LoginPage";
-
 
 const Routing = () => {
   return (
@@ -88,13 +89,15 @@ const Routing = () => {
       <Route path="/during-event" element={<DuringEvent />} />
       <Route path="/onbording" element={<OnBording />} />
       <Route path="/newimage" element={<BootstrapCarousel />} />
-      <Route path="/career" element={<Career/>} />
-      <Route path="/support" element={<Support/>} />
-      <Route path="/partner" element={<Partnership/>} />
-      <Route path="/whydigiview" element={<WhyDigiView /> } />
+      <Route path="/career" element={<Career />} />
+      <Route path="/support" element={<Support />} />
+      <Route path="/partner" element={<Partnership />} />
+      <Route path="/whydigiview" element={<WhyDigiView />} />
       <Route path="/mobileapp" element={<MobileApp />} />
       <Route path="/analytic" element={<Analytic />} />
-      <Route path="/log-in" element={<Login />} />
+      <Route path="/in-person" element={<InPerson />} />
+      <Route path="/pco-event" element={<PcoEvent />} />
+      <Route path="/log-in" element={<LoginPage />} />
     </Routes>
   );
 };
