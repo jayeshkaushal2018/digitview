@@ -57,7 +57,7 @@ const Routing = () => {
       <Route path="/find-events" element={<FilterEvents />} />
       <Route path="/events/:id" element={<EventDetails />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="/eventOrg" element={<EventOrg />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/events" element={<Event />} />
@@ -94,7 +94,7 @@ const Routing = () => {
       <Route path="/whydigiview" element={<WhyDigiView /> } />
       <Route path="/mobileapp" element={<MobileApp />} />
       <Route path="/analytic" element={<Analytic />} />
-      <Route path="/log-in" element={<LoginPage />} />
+      <Route path="/log-in" element={<Login />} />
     </Routes>
   );
 };

@@ -9,9 +9,9 @@ const App = () => {
   const location = useLocation();
   return (
     <div>
-      {location.pathname !== "/log-in" ? <NavbarMenu /> : null}
+      {location.pathname !== "/login" ? <NavbarMenu /> : null}
       <Routing />
-      {location.pathname !== "/log-in" ? <Footer /> : null}
+      {location.pathname !== "/login" ? <Footer /> : null}
     </div>
   );
 };
