@@ -268,10 +268,7 @@ function PcoEvent() {
             <p style={{ textAlign: "left", fontSize: "0.9vw" }}>
               <b><FaCheck color="#0070E6"/>	Control access to sessions and functions</b>
             </p>
-          
           </Col>
-      
-    
         </Row>
       </Container>
     </>

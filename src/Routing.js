@@ -46,6 +46,8 @@ import MobileApp from "./pages/MobileApp";
 import Analytic from "./pages/Analytic";
 import InPerson from "./pages/InPerson";
 import PcoEvent from "./pages/PcoEvent";
+import LoginPage from "./pages/LoginPage";
+
 
 const Routing = () => {
   return (
@@ -96,6 +98,7 @@ const Routing = () => {
       <Route path="/analytic" element={<Analytic />} />
       <Route path="/in-person" element={<InPerson />} />
       <Route path="/pco-event" element={<PcoEvent />} />
+      <Route path="/log-in" element={<LoginPage />} />
     </Routes>
   );
 };
