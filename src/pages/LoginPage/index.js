@@ -6,7 +6,6 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import login from "../../assets/images/celebration-pana.svg";
 
-
 const LoginPage = () => {
   const [isSignup, setSignup] = useState(true);
   const Navigate = useNavigate();
@@ -60,15 +59,19 @@ const LoginPage = () => {
         <Col className="d-flex justify-content-center align-items-center">
           <div className="form-container">
             {/* <a href="/">
-              <h3 className="brand-name"> */}  
-              <Link
+              <h3 className="brand-name"> */}
+            <Link
               to="/"
               className="brand-name fw-semibold"
-              style={{ "margin-right": "30px" ,"textDecoration": 'none'}}
+              style={{
+                "margin-right": "30px",
+                textDecoration: "none",
+                fontSize: "22px",
+              }}
             >
-                <h1>DigiView</h1>
-                </Link>
-                {/* </h3>
+              <b>DigiView</b>
+            </Link>
+            {/* </h3>
             </a> */}
             {isSignup ? (
               <>

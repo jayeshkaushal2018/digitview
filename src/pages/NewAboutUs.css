@@ -1,17 +1,17 @@
-.col {
+/* .col {
     height: 400px;
     width: 100%;  
-  }
+  } */
 
-.title{
-    text-align: left;
-    /* font-weight: bold; */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 170%;
+.title {
+  text-align: left;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 170%;
 }
 
-.hr{
-    border: 5px solid #148dfd;
-    border-radius: 5px;
+.hr {
+  border: 5px solid #148dfd;
+  border-radius: 5px;
 }

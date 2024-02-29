@@ -1,3 +1,6 @@
+@import url("./style/style.css");
+@import url("./style/responsive.css");
+
 .App {
   text-align: center;
 }
@@ -442,7 +445,7 @@ fon .footer-brand {
       #0070e6,
       #26a7f7,
       #5fc5fb,
-     /* #0070e6,
+      /* #0070e6,
       #0070e6,
       #0070e6,
       #0078e9,
@@ -452,8 +455,7 @@ fon .footer-brand {
       #26a7f7,
       #43b6fa,
       #5fc5fb  */
-      white
-     
+        white
     );
     display: flex;
     justify-content: center;
