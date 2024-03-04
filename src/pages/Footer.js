@@ -8,6 +8,9 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaProductHunt, FaLocationDot } from "react-icons/fa6";
 import { FaLinkedin, FaGoogle, FaPhone, FaGem } from "react-icons/fa";
 import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { ImLinkedin } from "react-icons/im";
+import { RiInstagramFill } from "react-icons/ri";
 import { SiAnswer } from "react-icons/si";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
@@ -185,29 +188,30 @@ const Footer = () => {
             <div className="d-flex justify-content-center">
               <i className="fas fa-gem me-3">
                 <FaFacebook
-                  size={24}
+                  // size={24}
                   className="footer_icons"
                   title="Facebook"
+                  style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}}
                 />
               </i>
               <i className="fas fa-gem me-3">
-                <BsGithub size={24} className="footer_icons" title="Github" />
+                <BsGithub  className="footer_icons" title="Github" />
               </i>
               <i className="fas fa-gem me-3">
-                <BsInstagram
-                  size={24}
+                <RiInstagramFill
+                 
                   className="footer_icons"
                   title="Instagram"
                 />
               </i>
               <i className="fas fa-gem me-3">
-                <BsTwitter size={24} className="footer_icons" title="Twitter" />
+                <BsTwitter  className="footer_icons" title="Twitter" />
               </i>
               <i className="fas fa-gem me-3">
-                <FaGoogle size={24} className="footer_icons" title="Google" />
+                <FaGoogle className="footer_icons" title="Google" />
               </i>
               <i className="fas fa-gem me-3">
-                <FaLinkedin size={24} className="footer_icons" title="Linked" />
+                <TiSocialLinkedin  className="footer_icons" title="Linked" />
               </i>
             </div>
           </Container>

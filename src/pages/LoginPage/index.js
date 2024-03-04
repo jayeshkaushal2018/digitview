@@ -65,9 +65,10 @@ const LoginPage = () => {
               to="/"
               className="brand-name fw-semibold"
               style={{
-                "margin-right": "30px",
+                // "margin-right": "30px",
                 textDecoration: "none",
-                fontSize: "22px",
+                fontSize: "110px",
+                textAlign : 'center',
               }}
             >
               <b>DigiView</b>
