@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import login from "../../assets/images/celebration-pana.svg";
 import { FaAsterisk } from "react-icons/fa";
 
-
 const LoginPage = () => {
   const [isSignup, setSignup] = useState(true);
   const Navigate = useNavigate();
@@ -59,14 +58,22 @@ const LoginPage = () => {
     <div className="login-page">
       <Row className="mx-0">
         <Col className="d-flex justify-content-center align-items-center">
-          <div className="form-container" >
-              <Link
+          <div className="form-container">
+            {/* <a href="/">
+              <h3 className="brand-name"> */}
+            <Link
               to="/"
               className="brand-name fw-semibold"
-              style={{ "margin-right": "30px" ,"textDecoration": 'none'}}
+              style={{
+                "margin-right": "30px",
+                textDecoration: "none",
+                fontSize: "22px",
+              }}
             >
-                <h1 style={{"textAlign":"center","fontSize":"6vw"}}><b>DigiView</b></h1>
-                </Link>
+              <b>DigiView</b>
+            </Link>
+            {/* </h3>
+            </a> */}
             {isSignup ? (
               <>
                 <b>

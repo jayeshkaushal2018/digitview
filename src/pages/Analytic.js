@@ -6,15 +6,9 @@ import Image from "react-bootstrap/Image";
 import effortless from "./../assets/Effortless.png";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
-import Quotes from "../components/Quotes";
 import DashBoard from "./../assets/Dashboard.png";
-import DataImage from "./../assets/data.png";
 import admin from "./../assets/admin.png";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import Valuable from "./../assets/valuable.png";
-import { CgSmileSad } from "react-icons/cg";
-import { HiOutlineEmojiHappy } from "react-icons/hi";
 
 import { HiMiniBookOpen } from "react-icons/hi2";
 import { IoMdCloudUpload } from "react-icons/io";
@@ -26,13 +20,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 function Analytic() {
   return (
     <>
-      <div
-        style={{
-          backgroundColor: "#dfe6ea",
-          padding: "6.25vw",
-          marginTop: "9vh",
-        }}
-      >
+      <div className="analitics-head">
         <h1 style={{ textAlign: "center", fontSize: "4.8vw" }}>
           Meaningful event data,
           <br /> analytics & insights
@@ -51,18 +39,10 @@ function Analytic() {
         </div>
       </div>
       <Container className="container text-center text-md-start mt-5 pb-5">
-        <Row style={{ marginTop: "7vw" }}>
-          <Col
-            style={{
-              //   paddingRight: "2.7vw",
-              paddingTop: "1.3vw",
-            }}
-            xs={8}
-            md={6}
-          >
+        <Row className="mt-5 pt-3">
+          <Col xs={12} md={6}>
             <h1 style={{ textAlign: "left", fontSize: "2.7vw" }}>
               <b>
-                {" "}
                 Effortless event reporting, for <br /> almost anything
               </b>
             </h1>
@@ -76,19 +56,29 @@ function Analytic() {
               custom report templates that suit any event you host.{" "}
             </p>
           </Col>
-          <Col xs={8} md={6}>
-            <div style={{ textAlign: "center", paddingTop: "10vh" }}>
-              <Image src={effortless} rounded style={{ border: "none" }} />
+          <Col xs={12} md={6} className="mt-3">
+            <div>
+              <Image
+                src={effortless}
+                rounded
+                style={{ border: "none" }}
+                className="w-100"
+              />
             </div>
           </Col>
         </Row>
-        <Row style={{ marginTop: "7vw" }}>
-          <Col xs={8} md={6}>
+        <Row className="mt-5 pt-3">
+          <Col xs={12} md={6}>
             <div style={{}}>
-              <Image src={DashBoard} rounded style={{ border: "none" }} />
+              <Image
+                src={DashBoard}
+                rounded
+                style={{ border: "none" }}
+                className="w-100"
+              />
             </div>
           </Col>
-          <Col style={{}} xs={8} md={6}>
+          <Col style={{}} xs={12} md={6}>
             <h1 style={{ textAlign: "justify", fontSize: "2.7vw" }}>
               <b>Track the metrics that matter</b>
             </h1>
@@ -107,20 +97,17 @@ function Analytic() {
             <Quotes quote={" Q12342"} part={"124-FDGDGD"} date={"6/5/2024"} status={""}/>
             </Col>
         </Row> */}
-        <Row style={{ marginTop: "7vw" }}>
+        <Row className="mt-5 pt-3">
           <Col
             style={{
               paddingRight: "2.7vw",
               paddingTop: "1.3vw",
             }}
-            xs={8}
+            xs={12}
             md={6}
           >
             <h1 style={{ textAlign: "left", fontSize: "2.7vw" }}>
-              <b>
-                {" "}
-                Synchronized <br /> data sharing in <br /> real-time
-              </b>
+              <b>Synchronized data sharing in real-time</b>
             </h1>
             <p style={{ textAlign: "justify", fontSize: "1.1vw" }}>
               Stay ahead of the curve by capturing invaluable event insights in
@@ -132,183 +119,192 @@ function Analytic() {
               vendors.{" "}
             </p>
           </Col>
-          <Col xs={8} md={6}>
+          <Col xs={12} md={6}>
             <div>
-              <Image src={admin} rounded style={{ border: "none" }} />
+              <Image
+                src={admin}
+                rounded
+                style={{ border: "none" }}
+                className="w-100"
+              />
             </div>
           </Col>
         </Row>
-        <Row style={{ marginTop: "7vw" }}>
-          <Col>
-            <CardGroup>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <HiMiniBookOpen size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Extensive reporting</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Gain access to our extensive library of 150+ pre-made
-                      reports. From registrations and functions to travel
-                      arrangements and finances, we've got you covered.
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <MdOutlineElectricBolt size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Build once, use always</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Create custom reports that work for all your events. No
-                      need to repeat the same tasks – let your templates handle
-                      the heavy lifting.
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <FaEdit size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Tailor-made reporting</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Tailor reports to your liking by adding, removing, or
-                      merging data fields. Style your reports with different
-                      fonts, colors, logos, images, or watermarks.
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </CardGroup>
+        <Row className="mt-5 pt-3">
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <HiMiniBookOpen size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Extensive reporting</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Gain access to our extensive library of 150+ pre-made
+                    reports. From registrations and functions to travel
+                    arrangements and finances, we've got you covered.
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <MdOutlineElectricBolt size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Build once, use always</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Create custom reports that work for all your events. No need
+                    to repeat the same tasks – let your templates handle the
+                    heavy lifting.
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <FaEdit size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Tailor-made reporting</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Tailor reports to your liking by adding, removing, or
+                    merging data fields. Style your reports with different
+                    fonts, colors, logos, images, or watermarks.
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
         <Row>
-          <Col>
-            <CardGroup>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <IoMdCloudUpload size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Data exports made simple</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Effortlessly export your data into various formats, such
-                      as Excel, PDF, CSV, or other popular file types. We make
-                      sharing your insights a breeze
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <IoIosSettings size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Custom data combinations</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Export the precise data combinations you need for in-depth
-                      analysis and reuse them whenever you require
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <Card
-                style={{
-                  marginRight: "3.2vw",
-                  borderStyle: "solid",
-                  borderWidth: "thin",
-                  borderColor: "grey",
-                  borderRadius: "10px",
-                }}
-              >
-                <Card.Body style={{ textAlign: "center" }}>
-                  <Card.Title style={{ textAlign: "center" }}>
-                    <MdOutlineSecurity size={"2.5vw"} color="#0070e6" />
-                  </Card.Title>
-                  <Card.Title>
-                    <p style={{ fontSize: "1.2vw", textAlign: "center" }}>
-                      <b>Secure and compliant</b>
-                    </p>
-                  </Card.Title>
-                  <Card.Text>
-                    <p style={{ fontSize: "0.8vw", textAlign: "center" }}>
-                      Rest easy with our full compliance with GDPR, CCPA, and
-                      other security regulations. You'll enjoy secure, trackable
-                      access to all your reports
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </CardGroup>
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <IoMdCloudUpload size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Data exports made simple</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Effortlessly export your data into various formats, such as
+                    Excel, PDF, CSV, or other popular file types. We make
+                    sharing your insights a breeze
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <IoIosSettings size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Custom data combinations</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Export the precise data combinations you need for in-depth
+                    analysis and reuse them whenever you require
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-4">
+            <Card
+              style={{
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "grey",
+                borderRadius: "10px",
+                height: "270px",
+              }}
+            >
+              <Card.Body style={{ textAlign: "center" }}>
+                <Card.Title style={{ textAlign: "center" }}>
+                  <MdOutlineSecurity size={"2.5vw"} color="#0070e6" />
+                </Card.Title>
+                <Card.Title>
+                  <p style={{ fontSize: "18px", textAlign: "center" }}>
+                    <b>Secure and compliant</b>
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  <p style={{ fontSize: "12px", textAlign: "center" }}>
+                    Rest easy with our full compliance with GDPR, CCPA, and
+                    other security regulations. You'll enjoy secure, trackable
+                    access to all your reports
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: "2.5vw" }}>
@@ -318,17 +314,13 @@ function Analytic() {
             }}
           >
             <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
-              <b>
-                Data-driven event <br /> excellence
-              </b>
+              <b>Data-driven event excellence</b>
             </h1>
             <p style={{ textAlign: "center", fontSize: "1.3vw" }}>
-              Dive deep into your event data to uncover hidden <br /> trends and
-              opportunities, ensuring every event is <br /> better than the last{" "}
-              <br />
-              Our reports provide the knowledge you need to <br />
-              make data-backed decisions that drive your events <br /> to new
-              heights.
+              Dive deep into your event data to uncover hidden trends and
+              opportunities, ensuring every event is better than the last Our
+              reports provide the knowledge you need to make data-backed
+              decisions that drive your events to new heights.
             </p>
           </Col>
         </Row>
@@ -387,9 +379,6 @@ function Analytic() {
             </Card>
           </Col>
         </Row> */}
-        
-        
-        
       </Container>
     </>
   );
