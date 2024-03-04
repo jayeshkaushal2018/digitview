@@ -100,11 +100,11 @@ function Openapi() {
             </h1>
             <h1 style={{ textAlign: "left", fontSize: "1.5vw" }}>
               {" "}
-              <GoDotFill /> CRM <br />
-              <GoDotFill /> Accounting <br />
-              <GoDotFill /> Memberships <br />
-              <GoDotFill /> Marketing <br />
-              <GoDotFill /> Sales <br />
+              <GoDotFill size={"1.0vw"}/> CRM <br />
+              <GoDotFill size={"1.0vw"}/> Accounting <br />
+              <GoDotFill size={"1.0vw"}/> Memberships <br />
+              <GoDotFill size={"1.0vw"}/> Marketing <br />
+              <GoDotFill size={"1.0vw"}/> Sales <br />
             </h1>
           </Col>
         </Row>

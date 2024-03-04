@@ -21,9 +21,9 @@ const Footer = () => {
             <Row>
               <Col className="col-md-3 col-lg-4 col-xl-3 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3">
+                  {/* <i className="fas fa-gem me-3">
                     <FaGem />
-                  </i>
+                  </i> */}
                   Company name
                 </h6>
                 <p>
@@ -74,9 +74,9 @@ const Footer = () => {
 
               <Col className="col-md-2 col-lg-2 col-xl-2 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3">
+                  {/* <i className="fas fa-gem me-3">
                     <FaProductHunt />
-                  </i>
+                  </i> */}
                   Products
                 </h6>
                 <p>
@@ -119,9 +119,9 @@ const Footer = () => {
 
               <Col className="col-md-3 col-lg-2 col-xl-2 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3">
+                  {/* <i className="fas fa-gem me-3">
                     <SiAnswer />
-                  </i>{" "}
+                  </i>{" "} */}
                   Soultions
                 </h6>
                 <p>
@@ -152,15 +152,17 @@ const Footer = () => {
                   </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Smart Connectors</h6>
+                  <h6 className="mb-4 ">
+                  <Link to="/smart-connect" className="navbar-brand  fw-semibold"> Smart Connectors</Link> 
+                  </h6>
                 </p>
               </Col>
 
               <Col className="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3">
+                  {/* <i className="fas fa-gem me-3">
                     <AiOutlineGlobal />
-                  </i>{" "}
+                  </i>{" "} */}
                   Resources
                 </h6>
                 <p>

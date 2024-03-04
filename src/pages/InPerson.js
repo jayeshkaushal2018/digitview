@@ -92,11 +92,11 @@ const InPerson = () => {
             }}
           >
             <CardGroup>
-              <Card style={{ marginRight: "30px" }}>
+              <Card style={{ marginRight: "30px" ,border: "none" }}>
                 <Card.Img
                   variant="top"
                   src={conference}
-                  style={{ border: "none" }}
+                  style={{ border: "none" ,"borderRadius":'20px' }}
                 />
                 <Card.Body>
                   <Card.Title
@@ -135,11 +135,11 @@ const InPerson = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
-              <Card style={{ marginRight: "30px" }}>
+              <Card style={{ marginRight: "30px" ,border: "none"}}>
                 <Card.Img
                   variant="top"
                   src={conference}
-                  style={{ border: "none" }}
+                  style={{ border: "none", "borderRadius":'20px'}}
                 />
                 <Card.Body>
                   <Card.Title
@@ -174,11 +174,11 @@ const InPerson = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
-              <Card style={{ marginRight: "30px" }}>
+              <Card style={{ marginRight: "30px",border: "none" }}>
                 <Card.Img
                   variant="top"
                   src={conference}
-                  style={{ border: "none" }}
+                  style={{ border: "none" , "borderRadius":'20px' }}
                 />
                 <Card.Body>
                   <Card.Title
@@ -217,6 +217,38 @@ const InPerson = () => {
           </Col>
         </Row>
         <Row style={{ marginTop: "25vw" }}>
+        <Col
+            style={
+              {
+                //   paddingRight: "2.7vw",
+                //   paddingTop: "1.3vw",
+              }
+            }
+            xs={7}
+            md={5}
+          >
+            <h1 style={{ textAlign: "left", fontSize: "2.7vw" }}>
+              <b> Powerful onsite tools for every event</b>
+            </h1>
+            <p style={{ textAlign: "justify", fontSize: "1.1vw" }}>
+            Streamline your event check-in effortlessly with DigitView onsite tools. Leverage self check-in, staffed check-in, or Bluetooth assisted check-in to ensure a swift and hassle-free experience. Our tools also support beacon, QR code, and name search options, offering greater flexibility.
+            <br/>DigitView connects with our trusted partners to provide seamless name badge printing, ensuring you can manage all your check-in services from one centralized system.</p>
+           <div style={{ textAlign: "center" }}>
+          
+        </div>
+          </Col>
+        <Col xs={9} md={7}>
+            <div style={{ textAlign: "center", padding: "1vh" }}>
+              <Image
+                src={conference}
+                rounded
+                style={{ border: "none", height: "auto", width: "100%" }}
+              />
+            </div>
+          </Col>
+       
+        </Row>
+        <Row style={{ marginTop: "5vw" }}>
         <Col xs={9} md={7}>
             <div style={{ textAlign: "center", padding: "1vh" }}>
               <Image
@@ -240,7 +272,10 @@ const InPerson = () => {
               <b> Need help setting up your event ? </b>
             </h1>
             <p style={{ textAlign: "justify", fontSize: "1.1vw" }}>
-            Let us do the heavy lifting. Save your precious time, so you can focus on delivering memorable events. We offer everything from building engaging websites and attendee apps, right through to customized smart registration and a range of portals.
+            <h1 style={{ textAlign: "left", fontSize: "1.35vw" }}>
+               Let us do the heavy lifting.
+            </h1>
+             Save your precious time, so you can focus on delivering memorable events. We offer everything from building engaging websites and attendee apps, right through to customized smart registration and a range of portals.
            </p>
            <div style={{ textAlign: "center" }}>
           <Button variant="primary" size="lg">

@@ -48,6 +48,7 @@ import InPerson from "./pages/InPerson";
 import PcoEvent from "./pages/PcoEvent";
 import LoginPage from "./pages/LoginPage";
 import OpenApi from "./pages/Openapi";
+import SmartConnect from "./pages/SmartConnect";
 
 const Routing = () => {
   return (
@@ -100,6 +101,7 @@ const Routing = () => {
       <Route path="/pco-event" element={<PcoEvent />} />
       <Route path="/log-in" element={<LoginPage />} />
       <Route path="/open-api" element={<OpenApi />} />
+      <Route path="/smart-connect" element={<SmartConnect />} />
     </Routes>
   );
 };

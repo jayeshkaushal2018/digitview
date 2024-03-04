@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-import AboutImg from "../utils/img/about-img.jpg";
+import AboutImg from "../assets/aboutus.png";
 import { Link } from "react-router-dom";
-import HomeImg from "../utils/img/header-img.jpg";
+import HomeImg from "../assets/homepagesecond.jpg";
 import { ContactInfo } from "../components/ContactInfo";
-import ContactImage from "../utils/img/contact-img.jpg";
+import ContactImage from "../assets/contactus.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -53,7 +53,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 d-flex justify-content-center d-none d-lg-flex">
-              <img src={AboutImg} className="img-fluid w-50" alt="about img" />
+              <img src={AboutImg} className="img-fluid w-50" alt="about img" style={{"border":"none" , "mixBlendMode": "multiply"}}/>
             </div>
             <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center">
               <h2 className="fs-1 mb-5 text-uppercase fw-bold">About Us</h2>
@@ -113,7 +113,7 @@ function Home() {
               <ContactInfo />
             </div>
             <div className="col-lg-6 d-flex justify-content-center">
-              <img src={ContactImage} className="img-fluid w-50" alt="" />
+              <img src={ContactImage} className="img-fluid w-55" alt="" style={{"borderRadius":"80px"}}/>
             </div>
           </div>
         </div>

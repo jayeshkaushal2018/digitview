@@ -5,6 +5,7 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import login from "../../assets/images/celebration-pana.svg";
+import { FaAsterisk } from "react-icons/fa";
 
 
 const LoginPage = () => {
@@ -58,26 +59,22 @@ const LoginPage = () => {
     <div className="login-page">
       <Row className="mx-0">
         <Col className="d-flex justify-content-center align-items-center">
-          <div className="form-container">
-            {/* <a href="/">
-              <h3 className="brand-name"> */}  
+          <div className="form-container" >
               <Link
               to="/"
               className="brand-name fw-semibold"
               style={{ "margin-right": "30px" ,"textDecoration": 'none'}}
             >
-                <h1>DigiView</h1>
+                <h1 style={{"textAlign":"center","fontSize":"6vw"}}><b>DigiView</b></h1>
                 </Link>
-                {/* </h3>
-            </a> */}
             {isSignup ? (
               <>
                 <b>
-                  <h3>Create your account</h3>
+                  <h3 style={{"textAlign":"center","fontSize":"1.5vw"}}>Create your account</h3>
                 </b>
                 <Form className="d-grid" onSubmit={signupformik.handleSubmit}>
                   <Form.Group className="mb-3">
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label>Email<sup> <FaAsterisk color="red"/></sup></Form.Label>
                     <Form.Control
                       type="email"
                       name="email"
@@ -93,7 +90,7 @@ const LoginPage = () => {
                       )}
                   </Form.Group>
                   <Form.Group className="mb-3">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>Password <sup> <FaAsterisk color="red"/></sup></Form.Label>
                     <Form.Control
                       type="password"
                       name="password"
@@ -108,7 +105,7 @@ const LoginPage = () => {
                         </p>
                       )}
                   </Form.Group>
-                  <Form.Label>Choose a user</Form.Label>
+                  <Form.Label>Choose a user <sup> <FaAsterisk color="red"/></sup></Form.Label>
 
                   <Form.Select className="mb-3">
                     <option value="organizer">Organizer</option>
@@ -130,11 +127,11 @@ const LoginPage = () => {
             ) : (
               <>
                 <b>
-                  <h3>Log in to your Account </h3>
+                  <h3 style={{"textAlign":"center","fontSize":"1.5vw"}}>Log in to your Account </h3>
                 </b>
                 <Form className="d-grid" onSubmit={formik.handleSubmit}>
                   <Form.Group className="mb-3">
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label>Email <sup> <FaAsterisk color="red"/></sup></Form.Label>
 
                     <Form.Control
                       type="email"
@@ -148,7 +145,7 @@ const LoginPage = () => {
                     )}
                   </Form.Group>
                   <Form.Group className="mb-3">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>Password <sup> <FaAsterisk color="red"/></sup></Form.Label>
 
                     <Form.Control
                       type="password"
