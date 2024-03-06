@@ -113,10 +113,10 @@ const Footer = () => {
                 </p>
                 <p>
                   <h6 className="mb-4 ">
-                  <Link to="/analytic" className="navbar-brand  fw-semibold">
-                    Analytics & Reporting
+                    <Link to="/analytic" className="navbar-brand  fw-semibold">
+                      Analytics & Reporting
                     </Link>
-                    </h6>
+                  </h6>
                 </p>
               </Col>
 
@@ -129,8 +129,10 @@ const Footer = () => {
                 </h6>
                 <p>
                   <h6 className="mb-4 ">
-                  <Link to="/in-person" className="navbar-brand  fw-semibold">In-Person Events </Link>
-                    </h6>
+                    <Link to="/in-person" className="navbar-brand  fw-semibold">
+                      In-Person Events{" "}
+                    </Link>
+                  </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Virtual Events</h6>
@@ -146,17 +148,27 @@ const Footer = () => {
                 </p>
                 <p>
                   <h6 className="mb-4 ">
-                  <Link to="/pco-event" className="navbar-brand  fw-semibold">PCOs and Event Agencies </Link>
+                    <Link to="/pco-event" className="navbar-brand  fw-semibold">
+                      PCOs and Event Agencies{" "}
+                    </Link>
                   </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">
-                  <Link to="/open-api" className="navbar-brand  fw-semibold">Event Integrations</Link>
+                    <Link to="/open-api" className="navbar-brand  fw-semibold">
+                      Event Integrations
+                    </Link>
                   </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">
-                  <Link to="/smart-connect" className="navbar-brand  fw-semibold"> Smart Connectors</Link> 
+                    <Link
+                      to="/smart-connect"
+                      className="navbar-brand  fw-semibold"
+                    >
+                      {" "}
+                      Smart Connectors
+                    </Link>
                   </h6>
                 </p>
               </Col>
@@ -186,33 +198,63 @@ const Footer = () => {
               </Col>
             </Row>
             <div className="d-flex justify-content-center">
-              <i className="fas fa-gem me-3">
-                <FaFacebook
-                  // size={24}
-                  className="footer_icons"
-                  title="Facebook"
-                  style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}}
-                />
-              </i>
-              <i className="fas fa-gem me-3">
-                <BsGithub  className="footer_icons" title="Github" />
-              </i>
-              <i className="fas fa-gem me-3">
-                <RiInstagramFill
-                 
-                  className="footer_icons"
-                  title="Instagram"
-                />
-              </i>
-              <i className="fas fa-gem me-3">
-                <BsTwitter  className="footer_icons" title="Twitter" />
-              </i>
-              <i className="fas fa-gem me-3">
-                <FaGoogle className="footer_icons" title="Google" />
-              </i>
-              <i className="fas fa-gem me-3">
-                <TiSocialLinkedin  className="footer_icons" title="Linked" />
-              </i>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fas fa-gem me-3">
+                  <FaFacebook
+                    // size={24}
+                    className="footer_icons"
+                    title="Facebook"
+                    style={{
+                      width: "7.4vh",
+                      height: "7.4vh",
+                      borderRadius: "50%",
+                      textAlign: "center",
+                      padding: "1.58vh",
+                    }}
+                  />
+                </i>
+              </a>
+              <a href="https://www.github.com" target="_blank" rel="noreferrer">
+                <i className="fas fa-gem me-3">
+                  <BsGithub className="footer_icons" title="Github" />
+                </i>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fas fa-gem me-3">
+                  <RiInstagramFill className="footer_icons" title="Instagram" />
+                </i>
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fas fa-gem me-3">
+                  <BsTwitter className="footer_icons" title="Twitter" />
+                </i>
+              </a>
+              <a href="https://www.google.com" target="_blank" rel="noreferrer">
+                <i className="fas fa-gem me-3">
+                  <FaGoogle className="footer_icons" title="Google" />
+                </i>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fas fa-gem me-3">
+                  <TiSocialLinkedin className="footer_icons" title="Linked" />
+                </i>
+              </a>
             </div>
           </Container>
         </section>
