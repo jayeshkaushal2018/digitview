@@ -375,8 +375,8 @@ fon .footer-brand {
 .footer_icons {
   background: #0070e6;
   padding: 1.50vh;
-  width: 7.0vh;
-  height: 7.0vh;
+  width: 5.5vh;
+  height: 5.5vh;
   border-radius: 50%;
   text-align: center;
   color: #fff;
@@ -384,7 +384,7 @@ fon .footer-brand {
   cursor: pointer;
   margin-top: 10vh;
 }
-/* style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}} */
+
 .about_us {
   background: #dedede;
 }

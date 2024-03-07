@@ -12,18 +12,21 @@ import Image from "react-bootstrap/Image";
 import Support from "./../assets/support.png";
 import CustomerLove from "./../assets/customer_love.svg";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import CarrerImage1 from "./../assets/carrer.jpg";
+import CarrerImage2 from "./../assets/carrer.jpg";
+import CarrerImage3 from "./../assets/world.jpg";
+import CarrerImage4 from "./../assets/starwork.jpg";
 const Career = () => {
   return (
     <>
       <Container style={{ paddingTop: "130px" }}>
         <Row>
           <Col>
-            <h1 style={{ textAlign: "center", fontSize: "5vw" }}>
-              24/7 support
+            <h1 style={{ textAlign: "center", fontSize: "3vw" }}>
+            <b>W</b>e're growing <br/>and looking for <br/> <b>Digivew</b> talent
             </h1>
             <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-              Sign in to raise tickets{" "}
+            Join the team bringing world-class technology to event <br/>planners and companies around the world.{" "}
             </p>
             <div style={{ textAlign: "center" }}>
               <button
@@ -31,10 +34,10 @@ const Career = () => {
                 className="btn btn-primary btn-lg"
                 style={{ width: "19vw" }}
               >
-                <p style={{ textAlign: "center", fontSize: "1vw" }}>
-                  Find answers or submit a ticket{" "}
+                <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
+                  Position opens {" "}
                   <b>
-                    <FaArrowRight />
+                    {/* <FaArrowRight /> */}
                   </b>
                 </p>
               </button>
@@ -42,6 +45,139 @@ const Career = () => {
           </Col>
         </Row>
         <Row>
+          <Col sm={12}
+            style={{
+              paddingTop: "3.3vw",
+            }}>
+          <div style={{ textAlign: "center" }}>
+              <Image src={CarrerImage1} rounded style={{ border: "none" }} className="img-fluid" />
+            </div>
+          </Col>
+        </Row>
+        <Row style={{marginTop: "10vw",}}>
+          <Col>
+          <div style={{ textAlign: "center" ,marginBottom: "5vw"}}>
+              <button
+                type="button"
+                className="btn btn-outline-primary btn-lg"
+                style={{ width: "10vw" }}
+              >
+                <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
+                  Position {" "}
+                  <b>
+                   
+                  </b>
+                </p>
+              </button>
+            </div>
+            <h1 style={{ textAlign: "center", fontSize: "3vw" }}>
+            Open <b>Position</b>
+            </h1>
+            <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
+            Click below to explore current career opportunities
+            </p>
+            <div style={{ textAlign: "center" }}>
+              <button
+                type="button"
+                className="btn btn-primary btn-lg"
+                style={{ width: "19vw" }}
+              >
+                <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
+                  Position opens {" "}
+                </p>
+              </button>
+            </div>
+          </Col>
+        </Row>
+        <Row style={{
+              paddingTop: "10vw",
+            }}>
+          <Col
+            style={{
+              paddingRight: "2.7vw",
+              paddingTop: "1.3vw",
+              backgroundColor: "white",
+            }}
+            sm={5}
+          >
+            <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
+            <b style={{ textAlign: "center", fontSize: "3vw" }}>Community is integral to our culture</b>
+            </h1>
+            <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
+            Our team, customers, partners and vendors all form part of a virtuous community who help us deliver DigitView.
+            </p>
+          </Col>
+          <Col
+            sm={7}
+            style={{
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <Image src={CarrerImage2} rounded className="img-fluid" style={{ border: "none" , }} />
+            </div>
+          </Col>
+        </Row>
+        <Row style={{
+              paddingTop: "10vw",
+            }}>
+          <Col
+            sm={7}
+            style={{
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <Image src={CarrerImage3} rounded className="img-fluid" style={{ border: "none" , }} />
+            </div>
+          </Col>
+          <Col
+            style={{
+              paddingRight: "2.7vw",
+              paddingTop: "1.3vw",
+              backgroundColor: "white",
+            }}
+            sm={5}
+          >
+            <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
+            <b style={{ textAlign: "center", fontSize: "3vw" }}>We're taking on the world of events</b>
+            </h1>
+            <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
+            With offices in Indian, USA  we are building a global scalable business and are on the hunt for great talent to join our teams.
+            </p>
+          </Col>
+          
+        </Row>
+        <Row style={{
+              paddingTop: "10vw",
+            }}>
+          <Col
+            style={{
+              paddingRight: "2.7vw",
+              paddingTop: "1.3vw",
+              backgroundColor: "white",
+            }}
+            sm={5}
+          >
+            <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
+            <b style={{ textAlign: "center", fontSize: "3vw" }}>Talented teams doing all-star work</b>
+            </h1>
+            <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
+            From engineering to sales, our teams are high performing and engage in satisfying, purposeful work every day.
+            </p>
+          </Col>
+          <Col
+            sm={7}
+            style={{
+              backgroundColor: "white",
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <Image src={CarrerImage4} rounded className="img-fluid" style={{ border: "none" , }} />
+            </div>
+          </Col>
+        </Row>
+        <Row style={{"marginTop":"10vw"}}>
           <Col style={{}}>
             <Card style={{ width: "18.2vw", height: " 20.8vw" }}>
               <Card.Body>
@@ -51,14 +187,16 @@ const Career = () => {
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
                     <b>
-                      New to <br /> DigiView ?{" "}
+                    INSIGHTS{" "}
                     </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
+                <p style={{ fontSize: "1vw" }}>
+                <b>FEBRUARY</b>
+                </p>
                   <p style={{ fontSize: "1vw" }}>
-                    To browse FAQs or raise and track tickets,you'll need to
-                    create an account in the support portal.
+                  Crafting an Effective 30/60/90 Day Plan: Aligning Work and Personal Goals for Success
                   </p>
                 </Card.Text>
                 {/* <div style={{ "textAlign":"" }}>
@@ -68,7 +206,7 @@ const Career = () => {
               </b></button>
               </div> */}
                 <Button variant="primary">
-                  Create an account{" "}
+                  Read more{" "}
                   <b style={{ color: "white" }}>
                     <FaArrowRight />
                   </b>
@@ -77,30 +215,34 @@ const Career = () => {
             </Card>
           </Col>
           <Col style={{}}>
-            <Card style={{ width: "18.2vw", height: "20.8vw" }}>
+            <Card style={{ width: "18.2vw", height: " 20.8vw" }}>
               <Card.Body>
                 <Card.Title>
-                  <TiContacts size={"3.3vw"} color="#0070e6" />
+                  <FaUserCircle size={"3.3vw"} color="#0070e6" />
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
                     <b>
-                      Are you an <br />
-                      Agent?
+                    INSIGHTS{" "}
                     </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
+                <p style={{ fontSize: "1vw" }}>
+                <b>FEBRUARY</b>
+                </p>
                   <p style={{ fontSize: "1vw" }}>
-                    Log in to access all Agent access controls.
+                  Unveiling the Power of Engagement Surveys: Fostering Collaboration and Innovation
                   </p>
                 </Card.Text>
-                {/* <button type="button" class="btn btn-outline-primary">Login Here {" "}
+                {/* <div style={{ "textAlign":"" }}>
+              <button type="button" class="btn btn-outline-primary">Create an account {" "}
               <b style={{color:"blue"}}>
                 <FaArrowRight />
-              </b></button> */}
+              </b></button>
+              </div> */}
                 <Button variant="primary">
-                  Login Here{" "}
+                  Read more{" "}
                   <b style={{ color: "white" }}>
                     <FaArrowRight />
                   </b>
@@ -109,28 +251,34 @@ const Career = () => {
             </Card>
           </Col>
           <Col style={{}}>
-            <Card style={{ width: "18.2vw", height: "20.8vw" }}>
+            <Card style={{ width: "18.2vw", height: " 20.8vw" }}>
               <Card.Body>
                 <Card.Title>
-                  <MdKey size={"3.3vw"} color="#0070e6" />
+                  <FaUserCircle size={"3.3vw"} color="#0070e6" />
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
-                    <b>Forgotten password?</b>
+                    <b>
+                    INSIGHTS{" "}
+                    </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
+                <p style={{ fontSize: "1vw" }}>
+                <b>January</b>
+                </p>
                   <p style={{ fontSize: "1vw" }}>
-                    Click the button below and we'll email you a one-time link
-                    to reset your password.
+                  New Year, New You: Transforming Your Career in the Technology Sector
                   </p>
                 </Card.Text>
-                {/* <button type="button" class="btn btn-outline-primary">Login Here {" "}
+                {/* <div style={{ "textAlign":"" }}>
+              <button type="button" class="btn btn-outline-primary">Create an account {" "}
               <b style={{color:"blue"}}>
                 <FaArrowRight />
-              </b></button> */}
+              </b></button>
+              </div> */}
                 <Button variant="primary">
-                  Reset Password{" "}
+                  Read more{" "}
                   <b style={{ color: "white" }}>
                     <FaArrowRight />
                   </b>
@@ -139,7 +287,7 @@ const Career = () => {
             </Card>
           </Col>
         </Row>
-        <Row
+        {/* <Row
           style={{
             marginTop: "5.3vw",
             color: "black",
@@ -170,8 +318,8 @@ const Career = () => {
               </p>
             </p>
           </Col>
-        </Row>
-        <Row style={{ marginTop: "7vw" }}>
+        </Row> */}
+        {/* <Row style={{ marginTop: "7vw" }}>
           <Col
             style={{
               paddingRight: "2.7vw",
@@ -200,8 +348,8 @@ const Career = () => {
               <Image src={Support} rounded style={{ border: "none" }} />
             </div>
           </Col>
-        </Row>
-        <Row style={{ marginTop: "7vw" }}>
+        </Row> */}
+        {/* <Row style={{ marginTop: "7vw" }}>
           <Col
             style={{
               paddingRight: "2.7vw",
@@ -225,8 +373,8 @@ const Career = () => {
               data protection regulations (GDPR).
             </p>
           </Col>
-        </Row>
-        <Row style={{ marginTop: "8vw" }}>
+        </Row> */}
+        <Row style={{ marginTop: "8vw" ,}}>
           <Col>
             <div style={{ textAlign: "center" }}>
               <Image src={CustomerLove} rounded style={{ border: "none" }} />
@@ -234,11 +382,10 @@ const Career = () => {
           </Col>
         </Row>
       </Container>
-      <div style={{ "backgroundColor": "#dfe6ea","padding":"120px" }}>
-        <h1 style={{ textAlign: "center", fontSize: "5vw" }}>See the platform <br/> in action</h1>
+      <div style={{ "backgroundColor": "#dfe6ea","padding":"120px" , "marginTop": "6vw" }}>
+        <h1 style={{ textAlign: "center", fontSize: "5vw" }}>Open positions</h1>
         <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-        Add the factor to your next event. Find out <br/> how DigiView can power your success.{" "}
-             {" "}
+        Click below to explore current career opportunities {" "}
         </p>
         <div style={{ textAlign: "center" }}>
           <button
@@ -248,7 +395,7 @@ const Career = () => {
           >
             <p style={{ textAlign: "center", fontSize: "1vw" }}>
              <b>
-                Get a demo
+               Open positions
               </b>
             </p>
           </button>

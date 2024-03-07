@@ -41,8 +41,8 @@ const Support = () => {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col style={{}}>
+        <Row style={{ paddingTop: "130px"}}>
+          <Col >
             <Card style={{ width: "18.2vw", height: " 20.8vw" }}>
               <Card.Body>
                 <Card.Title>
