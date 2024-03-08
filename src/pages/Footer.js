@@ -188,8 +188,10 @@ const Footer = () => {
             <div className="d-flex justify-content-center">
               <i className="fas fa-gem me-3">
                 <FaFacebook
+                  // size={24}
                   className="footer_icons"
                   title="Facebook"
+                  style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}}
                 />
               </i>
               <i className="fas fa-gem me-3">
