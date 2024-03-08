@@ -14,17 +14,14 @@ import { HiMiniComputerDesktop } from "react-icons/hi2";
 import Optimized from "./../assets/optimized.png";
 import Integrate from "./../assets/integrate.png";
 import { MdDateRange } from "react-icons/md";
-// import TextCard from "../components/TextCard";
 import Card from "react-bootstrap/Card";
-import { BsFillLightningFill } from "react-icons/bs";
-import { FaBoltLightning } from "react-icons/fa6";
-import { TfiAngleDown } from "react-icons/tfi";
 import { FaAngleDown } from "react-icons/fa6";
 import ListGroup from "react-bootstrap/ListGroup";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa6";
 import { TbTableShare } from "react-icons/tb";
+import Image from "react-bootstrap/Image";
 const WhyDigiView = () => {
   const navigate = useNavigate("/demo");
 
@@ -37,12 +34,12 @@ const WhyDigiView = () => {
         <Row
           style={{
             "background-color": "#f1f5f9",
-            borderRadius: "20px",
+            borderRadius: "2vw",
             marginTop: "6vw",
             padding: "2vw",
           }}
         >
-          <Col xs={7} md={5}>
+          <Col  md={6}>
             <h1 className="mb-5 text-black fw-bold text-center text-sm-start">
               <p style={{ color: "#606060", "font-size": "3vw" }}>
                 Why do event
@@ -80,13 +77,8 @@ const WhyDigiView = () => {
               </Link>
             </Button>
           </Col>
-          <Col xs={11} md={7}>
-            <img
-              src={HomeImg}
-              className="img-fluid w-55"
-              alt="about img"
-              style={{ mixBlendMode: "multiply", border: "none" }}
-            />
+          <Col  md={6}>
+            <Image src={HomeImg} rounded style={{ mixBlendMode: "multiply", border: "none" , height:"75vh" }} />
           </Col>
         </Row>
         <Row style={{ textAlign: "center", marginTop: "60px" }}>

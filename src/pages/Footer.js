@@ -2,18 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { RiLinksFill } from "react-icons/ri";
-import { IoMdContact } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
-import { FaFacebook, FaProductHunt, FaLocationDot } from "react-icons/fa6";
-import { FaLinkedin, FaGoogle, FaPhone, FaGem } from "react-icons/fa";
-import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { FaFacebook} from "react-icons/fa6";
+import {  FaGoogle, FaGem } from "react-icons/fa";
+import { BsGithub, BsTwitter } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
-import { ImLinkedin } from "react-icons/im";
 import { RiInstagramFill } from "react-icons/ri";
-import { SiAnswer } from "react-icons/si";
-import { AiOutlineGlobal } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -93,13 +87,34 @@ const Footer = () => {
                   </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Pre-Event</h6>
+                  <h6 className="mb-4 ">
+                  <Link
+                      to="/pre-event"
+                      className="navbar-brand  fw-semibold"
+                    >
+                    Pre-Event
+                    </Link>
+                    </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">During Event</h6>
+                  <h6 className="mb-4 ">
+                  <Link
+                      to="/during-event"
+                      className="navbar-brand  fw-semibold"
+                    >
+                      During Event
+                    </Link>
+                    </h6>
                 </p>
                 <p>
-                  <h6 className="mb-4 ">Post Event</h6>
+                  <h6 className="mb-4 ">
+                  <Link
+                      to="/post-eventt"
+                      className="navbar-brand  fw-semibold"
+                    >
+                      Post Event
+                    </Link>  
+                  </h6>
                 </p>
                 <p>
                   <h6 className="mb-4 ">Registration</h6>
@@ -191,7 +206,7 @@ const Footer = () => {
                   // size={24}
                   className="footer_icons"
                   title="Facebook"
-                  style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}}
+                  // style={{"width":"7.4vh","height":"7.4vh","borderRadius":"50%","textAlign":"center","padding":"1.58vh"}}
                 />
               </i>
               <i className="fas fa-gem me-3">

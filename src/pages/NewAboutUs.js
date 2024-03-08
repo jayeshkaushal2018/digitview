@@ -26,17 +26,17 @@ function NewAboutUs() {
                     <Col>
                         <Row>
                             <Col>
-                                <div style={{ "width": "100%", "height": "50%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
+                                <div style={{ "width": "100%", "height": "75%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
                                     <p style={{ "paddingLeft": "50px", "paddingTop": "2px", "marginBottom": "-22PX" }}> <FaHandshakeAngle color="white" fontSize="5.5em" /></p><br /><h5 style={{ "paddingLeft": "40PX", "color": 'white' }}>Friendly Team </h5><p style={{ "paddingLeft": "19PX", "color": 'white' }}><b>More Than 200 Teams</b></p>
                                 </div>
                             </Col>
                             <Col>
-                                <div style={{ "width": "100%", "height": "50%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
+                                <div style={{ "width": "100%", "height": "75%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
                                     <p style={{ "paddingLeft": "70px", "paddingTop": "14px", "marginBottom": "-22px" }}> <FaClockRotateLeft color="white" fontSize="3.5em" /></p><br /><h5 style={{ "paddingLeft": "55PX", "color": 'white' }}>24/7 Hours Support</h5><p style={{ "paddingLeft": "28PX", "color": 'white' }}><b>Anytime anywhere</b></p>
                                 </div>
                             </Col>
                             <Col >
-                                <div style={{ "width": "100%", "height": "50%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
+                                <div style={{ "width": "100%", "height": "75%", "backgroundColor": "#1472c9", "borderRadius": "120px", "marginTop": "50%" }}>
                                     <p style={{ "paddingLeft": "60px", "marginBottom": "-22PX", "paddingTop": "10px" }}> <IoBulb color="white" fontSize="4.5em" /></p><br /><h5 style={{ "paddingLeft": "40PX", "color": 'white' }}>Brilliant Idea </h5><p style={{ "paddingLeft": "19PX", "color": 'white' }}><b>We have million idea</b></p>
                                 </div>
                             </Col>

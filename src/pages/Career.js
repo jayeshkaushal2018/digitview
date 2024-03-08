@@ -22,59 +22,62 @@ const Career = () => {
       <Container style={{ paddingTop: "130px" }}>
         <Row>
           <Col>
-            <h1 style={{ textAlign: "center", fontSize: "3vw" }}>
-            <b>W</b>e're growing <br/>and looking for <br/> <b>Digivew</b> talent
-            </h1>
+            <p style={{ textAlign: "center", fontSize: "4.5vw" }}>
+              We're growing <br />
+              and looking for <br /><b style={{"color":"#0070e6"}}>Digivew</b> talent
+            </p>
             <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-            Join the team bringing world-class technology to event <br/>planners and companies around the world.{" "}
+              Join the team bringing world-class technology to event <br />
+              planners and companies around the world.{" "}
             </p>
             <div style={{ textAlign: "center" }}>
               <button
                 type="button"
                 className="btn btn-primary btn-lg"
-                style={{ width: "19vw" }}
+                style={{ width: "12vw" }}
               >
-                <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-                  Position opens {" "}
-                  <b>
-                    {/* <FaArrowRight /> */}
-                  </b>
+                <p style={{ textAlign: "center", fontSize: "1.2vw" }}>
+                  Position opens <b>{/* <FaArrowRight /> */}</b>
                 </p>
               </button>
             </div>
           </Col>
         </Row>
         <Row>
-          <Col sm={12}
+          <Col
+            sm={12}
             style={{
               paddingTop: "3.3vw",
-            }}>
-          <div style={{ textAlign: "center" }}>
-              <Image src={CarrerImage1} rounded style={{ border: "none" }} className="img-fluid" />
+            }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <Image
+                src={CarrerImage1}
+                rounded
+                style={{ border: "none" }}
+                className="img-fluid"
+              />
             </div>
           </Col>
         </Row>
-        <Row style={{marginTop: "10vw",}}>
+        <Row style={{ marginTop: "10vw" }}>
           <Col>
-          <div style={{ textAlign: "center" ,marginBottom: "5vw"}}>
+            <div style={{ textAlign: "center", marginBottom: "5vw" }}>
               <button
                 type="button"
                 className="btn btn-outline-primary btn-lg"
                 style={{ width: "10vw" }}
               >
                 <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-                  Position {" "}
-                  <b>
-                   
-                  </b>
+                  Position <b></b>
                 </p>
               </button>
             </div>
             <h1 style={{ textAlign: "center", fontSize: "3vw" }}>
-            Open <b>Position</b>
+              Open <b>Position</b>
             </h1>
             <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-            Click below to explore current career opportunities
+              Click below to explore current career opportunities
             </p>
             <div style={{ textAlign: "center" }}>
               <button
@@ -83,28 +86,34 @@ const Career = () => {
                 style={{ width: "19vw" }}
               >
                 <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-                  Position opens {" "}
+                  Position opens{" "}
                 </p>
               </button>
             </div>
           </Col>
         </Row>
-        <Row style={{
-              paddingTop: "10vw",
-            }}>
+        <Row
+          style={{
+            paddingTop: "10vw",
+          }}
+        >
           <Col
             style={{
               paddingRight: "2.7vw",
               paddingTop: "1.3vw",
-              backgroundColor: "white",
+              backgroundColor: "red",
+              borderRadius: "10px",
             }}
             sm={5}
           >
             <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
-            <b style={{ textAlign: "center", fontSize: "3vw" }}>Community is integral to our culture</b>
+              <b>
+                Community is integral to our culture
+              </b>
             </h1>
-            <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
-            Our team, customers, partners and vendors all form part of a virtuous community who help us deliver DigitView.
+            <p style={{ textAlign: "center", fontSize: "1.3vw" }}>
+              Our team, customers, partners and vendors all form part of a
+              virtuous community who help us deliver DigitView.
             </p>
           </Col>
           <Col
@@ -114,13 +123,20 @@ const Career = () => {
             }}
           >
             <div style={{ textAlign: "center" }}>
-              <Image src={CarrerImage2} rounded className="img-fluid" style={{ border: "none" , }} />
+              <Image
+                src={CarrerImage2}
+                rounded
+                className="img-fluid"
+                style={{ border: "none" }}
+              />
             </div>
           </Col>
         </Row>
-        <Row style={{
-              paddingTop: "10vw",
-            }}>
+        <Row
+          style={{
+            paddingTop: "10vw",
+          }}
+        >
           <Col
             sm={7}
             style={{
@@ -128,7 +144,12 @@ const Career = () => {
             }}
           >
             <div style={{ textAlign: "center" }}>
-              <Image src={CarrerImage3} rounded className="img-fluid" style={{ border: "none" , }} />
+              <Image
+                src={CarrerImage3}
+                rounded
+                className="img-fluid"
+                style={{ border: "none" }}
+              />
             </div>
           </Col>
           <Col
@@ -140,17 +161,21 @@ const Career = () => {
             sm={5}
           >
             <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
-            <b style={{ textAlign: "center", fontSize: "3vw" }}>We're taking on the world of events</b>
+              <b style={{ textAlign: "center", fontSize: "3vw" }}>
+                We're taking on the world of events
+              </b>
             </h1>
             <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
-            With offices in Indian, USA  we are building a global scalable business and are on the hunt for great talent to join our teams.
+              With offices in Indian, USA we are building a global scalable
+              business and are on the hunt for great talent to join our teams.
             </p>
           </Col>
-          
         </Row>
-        <Row style={{
-              paddingTop: "10vw",
-            }}>
+        <Row
+          style={{
+            paddingTop: "10vw",
+          }}
+        >
           <Col
             style={{
               paddingRight: "2.7vw",
@@ -160,10 +185,13 @@ const Career = () => {
             sm={5}
           >
             <h1 style={{ textAlign: "center", fontSize: "2.7vw" }}>
-            <b style={{ textAlign: "center", fontSize: "3vw" }}>Talented teams doing all-star work</b>
+              <b style={{ textAlign: "center", fontSize: "3vw" }}>
+                Talented teams doing all-star work
+              </b>
             </h1>
             <p style={{ textAlign: "justify", fontSize: "1.3vw" }}>
-            From engineering to sales, our teams are high performing and engage in satisfying, purposeful work every day.
+              From engineering to sales, our teams are high performing and
+              engage in satisfying, purposeful work every day.
             </p>
           </Col>
           <Col
@@ -173,11 +201,16 @@ const Career = () => {
             }}
           >
             <div style={{ textAlign: "center" }}>
-              <Image src={CarrerImage4} rounded className="img-fluid" style={{ border: "none" , }} />
+              <Image
+                src={CarrerImage4}
+                rounded
+                className="img-fluid"
+                style={{ border: "none" }}
+              />
             </div>
           </Col>
         </Row>
-        <Row style={{"marginTop":"10vw"}}>
+        <Row style={{ marginTop: "10vw" }}>
           <Col style={{}}>
             <Card style={{ width: "18.2vw", height: " 20.8vw" }}>
               <Card.Body>
@@ -186,17 +219,16 @@ const Career = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
-                    <b>
-                    INSIGHTS{" "}
-                    </b>
+                    <b>INSIGHTS </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
-                <p style={{ fontSize: "1vw" }}>
-                <b>FEBRUARY</b>
-                </p>
                   <p style={{ fontSize: "1vw" }}>
-                  Crafting an Effective 30/60/90 Day Plan: Aligning Work and Personal Goals for Success
+                    <b>FEBRUARY</b>
+                  </p>
+                  <p style={{ fontSize: "1vw" }}>
+                    Crafting an Effective 30/60/90 Day Plan: Aligning Work and
+                    Personal Goals for Success
                   </p>
                 </Card.Text>
                 {/* <div style={{ "textAlign":"" }}>
@@ -222,17 +254,16 @@ const Career = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
-                    <b>
-                    INSIGHTS{" "}
-                    </b>
+                    <b>INSIGHTS </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
-                <p style={{ fontSize: "1vw" }}>
-                <b>FEBRUARY</b>
-                </p>
                   <p style={{ fontSize: "1vw" }}>
-                  Unveiling the Power of Engagement Surveys: Fostering Collaboration and Innovation
+                    <b>FEBRUARY</b>
+                  </p>
+                  <p style={{ fontSize: "1vw" }}>
+                    Unveiling the Power of Engagement Surveys: Fostering
+                    Collaboration and Innovation
                   </p>
                 </Card.Text>
                 {/* <div style={{ "textAlign":"" }}>
@@ -258,17 +289,16 @@ const Career = () => {
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <p style={{ fontSize: "1.67vw" }}>
-                    <b>
-                    INSIGHTS{" "}
-                    </b>
+                    <b>INSIGHTS </b>
                   </p>
                 </Card.Subtitle>
                 <Card.Text>
-                <p style={{ fontSize: "1vw" }}>
-                <b>January</b>
-                </p>
                   <p style={{ fontSize: "1vw" }}>
-                  New Year, New You: Transforming Your Career in the Technology Sector
+                    <b>January</b>
+                  </p>
+                  <p style={{ fontSize: "1vw" }}>
+                    New Year, New You: Transforming Your Career in the
+                    Technology Sector
                   </p>
                 </Card.Text>
                 {/* <div style={{ "textAlign":"" }}>
@@ -374,7 +404,7 @@ const Career = () => {
             </p>
           </Col>
         </Row> */}
-        <Row style={{ marginTop: "8vw" ,}}>
+        <Row style={{ marginTop: "8vw" }}>
           <Col>
             <div style={{ textAlign: "center" }}>
               <Image src={CustomerLove} rounded style={{ border: "none" }} />
@@ -382,10 +412,16 @@ const Career = () => {
           </Col>
         </Row>
       </Container>
-      <div style={{ "backgroundColor": "#dfe6ea","padding":"120px" , "marginTop": "6vw" }}>
+      <div
+        style={{
+          backgroundColor: "#dfe6ea",
+          padding: "120px",
+          marginTop: "6vw",
+        }}
+      >
         <h1 style={{ textAlign: "center", fontSize: "5vw" }}>Open positions</h1>
         <p style={{ textAlign: "center", fontSize: "1.5vw" }}>
-        Click below to explore current career opportunities {" "}
+          Click below to explore current career opportunities{" "}
         </p>
         <div style={{ textAlign: "center" }}>
           <button
@@ -394,9 +430,7 @@ const Career = () => {
             style={{ width: "10vw" }}
           >
             <p style={{ textAlign: "center", fontSize: "1vw" }}>
-             <b>
-               Open positions
-              </b>
+              <b>Open positions</b>
             </p>
           </button>
         </div>
